@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\jgage\\source\\repos\\PorcelainAndAlabaster\\PorcelainAndAlabaster\\PorcelainAndAlabaster.csproj": {}
+    "C:\\Users\\jgage\\Documents\\GitHub\\PorcelainAndAlabaster\\PorcelainAndAlabaster\\PorcelainAndAlabaster.csproj": {}
   },
   "projects": {
-    "C:\\Users\\jgage\\source\\repos\\PorcelainAndAlabaster\\PorcelainAndAlabaster\\PorcelainAndAlabaster.csproj": {
+    "C:\\Users\\jgage\\Documents\\GitHub\\PorcelainAndAlabaster\\PorcelainAndAlabaster\\PorcelainAndAlabaster.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\jgage\\source\\repos\\PorcelainAndAlabaster\\PorcelainAndAlabaster\\PorcelainAndAlabaster.csproj",
+        "projectUniqueName": "C:\\Users\\jgage\\Documents\\GitHub\\PorcelainAndAlabaster\\PorcelainAndAlabaster\\PorcelainAndAlabaster.csproj",
         "projectName": "PorcelainAndAlabaster",
-        "projectPath": "C:\\Users\\jgage\\source\\repos\\PorcelainAndAlabaster\\PorcelainAndAlabaster\\PorcelainAndAlabaster.csproj",
+        "projectPath": "C:\\Users\\jgage\\Documents\\GitHub\\PorcelainAndAlabaster\\PorcelainAndAlabaster\\PorcelainAndAlabaster.csproj",
         "packagesPath": "C:\\Users\\jgage\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jgage\\source\\repos\\PorcelainAndAlabaster\\PorcelainAndAlabaster\\obj\\",
+        "outputPath": "C:\\Users\\jgage\\Documents\\GitHub\\PorcelainAndAlabaster\\PorcelainAndAlabaster\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

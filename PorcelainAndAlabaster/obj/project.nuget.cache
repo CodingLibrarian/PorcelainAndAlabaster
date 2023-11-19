@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "NgXt+meKlb+x5TpopjIn722iiImsK54SoJ+yIgCod02nXRNHPwSDTOl5DWL7dEhajsXSdN7lrD6xhPbRJSRz8Q==",
+  "dgSpecHash": "NadFVLVOrNsg/M/M17qlOtiWcaMjh9uTy84622WoiWC23BJkoVDDBWB90h5E+CsJylnzKa2TpE8nyViXUvp9Mw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\jgage\\source\\repos\\PorcelainAndAlabaster\\PorcelainAndAlabaster\\PorcelainAndAlabaster.csproj",
+  "projectFilePath": "C:\\Users\\jgage\\Documents\\GitHub\\PorcelainAndAlabaster\\PorcelainAndAlabaster\\PorcelainAndAlabaster.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\jgage\\.nuget\\packages\\humanizer\\2.14.1\\humanizer.2.14.1.nupkg.sha512",
     "C:\\Users\\jgage\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",

@@ -22,7 +22,22 @@ namespace PorcelainAndAlabaster.Controllers
         {
             return View();
         }
-
+        public IActionResult About()
+        {
+            return View();
+        }
+        public IActionResult ILLRequest()
+        {
+            return View();
+        }
+        public IActionResult PatronItemsView()
+        {
+            return View();
+        }
+        public IActionResult ReferenceGuide()
+        {
+            return View();
+        }
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {

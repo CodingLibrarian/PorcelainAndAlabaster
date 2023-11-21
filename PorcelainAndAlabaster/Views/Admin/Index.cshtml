@@ -1,7 +1,35 @@
 ﻿
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Administration";
 }
 
-<h1>Index</h1>
+<h1>Administration</h1>
 
+@{ Html.RenderPartial("~Views/Shared/SettingBar.cshtml"); }
+
+<div id="sidebar">
+    <p id="accounts-sidebar">Accounts</p>
+    <p id="ip-configuration-sidebar">IP Configuration</p>
+    <p id="proxy-server-settings-sidebar">Proxy Sever Settings</p>
+    <p id="statistics-sidebar">Statistics</p>
+    <p id="alerts-id">Alerts</p>
+</div>
+<div id="main">
+    <div id="accounts-management" class="hidden">
+        <ol id="accounts-list">
+            <li class="account">
+                <p class="account-name"></p>
+                <p class="account-date"></p>
+                <p class="account-permission"></p>
+            </li>
+        </ol>
+    </div>
+    <div id="ip-configuration-management">
+    </div>
+    <div id="proxy-server-settings-management">
+    </div>
+    <div id="statistics-management">
+    </div>
+    <div id="alerts-management">
+    </div>
+</div>

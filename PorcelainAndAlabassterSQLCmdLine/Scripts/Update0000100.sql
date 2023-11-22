@@ -1,0 +1,26 @@
+﻿BEGIN TRANSACTION
+	CREATE TABLE BibRecords(
+		id INT PRIMARY KEY,
+	)
+	CREATE TABLE ItemRecords(
+		id INT PRIMARY KEY,
+	)
+	CREATE TABLE Users(
+		id INT PRIMARY KEY,
+		userName VARCHAR(100) NOT NULL,
+		passwd VARCHAR(100) NOT NULL,
+		settings VARCHAR(MAX)
+	)
+	CREATE TABLE Patrons(
+		id INT PRIMARY KEY,
+		firstName VARCHAR(100) NOT NULL,
+		middleName VARCHAR(100),
+		lastName VARCHAR(100) NOT NULL,
+		passwd VARCHAR(100),
+		address1 VARCHAR(250),
+		address2 VARCHAR(250),
+		email VARCHAR(250),
+		homePhone VARCHAR(25),
+		cellPhone VARCHAR(25)
+	)
+COMMIT TRANSACTION

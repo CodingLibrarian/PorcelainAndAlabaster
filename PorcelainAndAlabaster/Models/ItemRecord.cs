@@ -6,7 +6,7 @@
         protected string? Barcode { get; set; }
         protected DateTime? DueDate { get; set; }
         // Enum This
-        protected string? Type { get; set; }
+        protected string? ItemType { get; set; }
         protected int[]? CirculationStatsIds { get; set; }
         protected int? PatronId{  get; set; }
         protected int? BibRecordId { get; set; }
@@ -17,7 +17,7 @@
             ItemId = itemId;
             Barcode = barcode;
             DueDate = dueDate;
-            Type = type;
+            ItemType = type;
             CirculationStatsIds = circulationStatsIds;
             PatronId = patronId;
             BibRecordId = bibRecordId;

@@ -444,3 +444,5 @@ C:\Users\jgage\Documents\GitHub\PorcelainAndAlabaster\PorcelainAndAlabaster\obj\
 C:\Users\jgage\Documents\GitHub\PorcelainAndAlabaster\PorcelainAndAlabaster\obj\Debug\net7.0\PorcelainAndAlabaster.pdb
 C:\Users\jgage\Documents\GitHub\PorcelainAndAlabaster\PorcelainAndAlabaster\obj\Debug\net7.0\PorcelainAndAlabaster.genruntimeconfig.cache
 C:\Users\jgage\Documents\GitHub\PorcelainAndAlabaster\PorcelainAndAlabaster\obj\Debug\net7.0\ref\PorcelainAndAlabaster.dll
+C:\Users\jgage\Documents\GitHub\PorcelainAndAlabaster\PorcelainAndAlabaster\bin\Debug\net7.0\compilerconfig.json
+C:\Users\jgage\Documents\GitHub\PorcelainAndAlabaster\PorcelainAndAlabaster\bin\Debug\net7.0\tsconfig.json

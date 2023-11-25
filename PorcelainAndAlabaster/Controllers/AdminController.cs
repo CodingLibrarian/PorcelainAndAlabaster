@@ -14,7 +14,7 @@ namespace PorcelainAndAlabaster.Controllers
         {
             _logger = logger;
         }
-        public IActionResult Acquisitons()
+        public IActionResult Acquisitions()
         {
             return View();
         }
@@ -31,6 +31,10 @@ namespace PorcelainAndAlabaster.Controllers
             return View();
         }
         public IActionResult ReferenceGuideEdit()
+        {
+            return View();
+        }
+        public IActionResult RoomBookings()
         {
             return View();
         }

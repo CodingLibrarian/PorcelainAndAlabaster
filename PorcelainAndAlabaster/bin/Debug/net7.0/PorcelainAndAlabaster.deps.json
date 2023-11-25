@@ -8,6 +8,8 @@
     ".NETCoreApp,Version=v7.0": {
       "PorcelainAndAlabaster/1.0.0": {
         "dependencies": {
+          "LibSassBuilder": "3.0.0",
+          "Microsoft.TypeScript.MSBuild": "5.2.2",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "7.0.11"
         },
         "runtime": {
@@ -554,6 +556,7 @@
           }
         }
       },
+      "LibSassBuilder/3.0.0": {},
       "Microsoft.AspNetCore.Razor.Language/6.0.11": {
         "runtime": {
           "lib/netstandard2.0/Microsoft.AspNetCore.Razor.Language.dll": {
@@ -1069,6 +1072,7 @@
       },
       "Microsoft.NETCore.Platforms/1.1.0": {},
       "Microsoft.NETCore.Targets/1.1.0": {},
+      "Microsoft.TypeScript.MSBuild/5.2.2": {},
       "Microsoft.VisualStudio.Web.CodeGeneration/7.0.11": {
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection": "7.0.0",
@@ -2485,6 +2489,13 @@
       "path": "humanizer.core.zh-hant/2.14.1",
       "hashPath": "humanizer.core.zh-hant.2.14.1.nupkg.sha512"
     },
+    "LibSassBuilder/3.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-lbQw3xsZ9SxV4H3EN19QkXFueU6pnPMhqE0upSWnnMw1jhvlt7fkv0bCVVKn3gedFf2t4V4BKkWyJE4cz0AM5g==",
+      "path": "libsassbuilder/3.0.0",
+      "hashPath": "libsassbuilder.3.0.0.nupkg.sha512"
+    },
     "Microsoft.AspNetCore.Razor.Language/6.0.11": {
       "type": "package",
       "serviceable": true,
@@ -2638,6 +2649,13 @@
       "sha512": "sha512-aOZA3BWfz9RXjpzt0sRJJMjAscAUm3Hoa4UWAfceV9UTYxgwZ1lZt5nO2myFf+/jetYQo4uTP7zS8sJY67BBxg==",
       "path": "microsoft.netcore.targets/1.1.0",
       "hashPath": "microsoft.netcore.targets.1.1.0.nupkg.sha512"
+    },
+    "Microsoft.TypeScript.MSBuild/5.2.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-anuU+9I9xKlho/N71AUEt5vU0CNNVPkQr8ISkOYnrW0gqZbeJmkfjahV71ykipngsWrIe0QxXNNJvurpEiuM7Q==",
+      "path": "microsoft.typescript.msbuild/5.2.2",
+      "hashPath": "microsoft.typescript.msbuild.5.2.2.nupkg.sha512"
     },
     "Microsoft.VisualStudio.Web.CodeGeneration/7.0.11": {
       "type": "package",

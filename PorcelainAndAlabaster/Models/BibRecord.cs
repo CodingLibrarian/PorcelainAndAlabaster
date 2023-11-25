@@ -6,8 +6,8 @@
         protected string? Title { get; set; }
         protected string? Author { get; set; }
         protected string? Publisher { get; set; }
-        protected string? Location { get; set; }
-        protected int? Year { get; set; }
+        protected string? PublisherLocation { get; set; }
+        protected int? PublicationYear { get; set; }
         protected DateTime Created { get; set; }
         protected DateTime? LastUpdated { get; set; }
         protected bool IsDeleted { get; set; }
@@ -23,8 +23,8 @@
             Title = title;
             Author = author;
             Publisher = publisher;
-            Location = location;
-            Year = year;
+            PublisherLocation = location;
+            PublicationYear = year;
             Created = created;
             LastUpdated = lastUpdated;
             IsDeleted = isDeleted;

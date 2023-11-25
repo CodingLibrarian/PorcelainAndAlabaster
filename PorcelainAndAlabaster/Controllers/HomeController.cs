@@ -26,11 +26,23 @@ namespace PorcelainAndAlabaster.Controllers
         {
             return View();
         }
+        public IActionResult Archives()
+        {
+            return View();
+        }
+        public IActionResult Contact()
+        {
+            return View();
+        }
+        public IActionResult Events()
+        {
+            return View();
+        }
         public IActionResult ILLRequest()
         {
             return View();
         }
-        public IActionResult PatronItemsView()
+        public IActionResult YourAccount()
         {
             return View();
         }

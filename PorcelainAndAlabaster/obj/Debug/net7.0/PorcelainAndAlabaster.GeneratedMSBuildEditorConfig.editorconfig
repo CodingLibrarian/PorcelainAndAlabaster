@@ -80,16 +80,16 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/jgage/Documents/GitHub/PorcelainAndAlabaster/PorcelainAndAlabaster/Views/Home/PatronItemsView.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQYXRyb25JdGVtc1ZpZXcuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
 [C:/Users/jgage/Documents/GitHub/PorcelainAndAlabaster/PorcelainAndAlabaster/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/jgage/Documents/GitHub/PorcelainAndAlabaster/PorcelainAndAlabaster/Views/Home/ReferenceGuide.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxSZWZlcmVuY2VHdWlkZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jgage/Documents/GitHub/PorcelainAndAlabaster/PorcelainAndAlabaster/Views/Home/YourAccount.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxZb3VyQWNjb3VudC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/jgage/Documents/GitHub/PorcelainAndAlabaster/PorcelainAndAlabaster/Views/Shared/BibRecord.cshtml]

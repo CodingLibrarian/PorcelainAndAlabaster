@@ -1,6 +1,5 @@
 {
   "compilerOptions": {
-    "compileOnSave": false,
     "noEmitOnError": true,
     "noImplicitAny": false,
     "outFile": "./wwwroot/js/tsc.js",

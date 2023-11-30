@@ -223,6 +223,8 @@ C:\Users\jgage\source\repos\PorcelainAndAlabaster\PorcelainAndAlabaster\obj\Debu
 C:\Users\jgage\source\repos\PorcelainAndAlabaster\PorcelainAndAlabaster\obj\Debug\net7.0\PorcelainAndAlabaster.csproj.CopyComplete
 C:\Users\jgage\Documents\GitHub\PorcelainAndAlabaster\PorcelainAndAlabaster\bin\Debug\net7.0\appsettings.Development.json
 C:\Users\jgage\Documents\GitHub\PorcelainAndAlabaster\PorcelainAndAlabaster\bin\Debug\net7.0\appsettings.json
+C:\Users\jgage\Documents\GitHub\PorcelainAndAlabaster\PorcelainAndAlabaster\bin\Debug\net7.0\compilerconfig.json
+C:\Users\jgage\Documents\GitHub\PorcelainAndAlabaster\PorcelainAndAlabaster\bin\Debug\net7.0\tsconfig.json
 C:\Users\jgage\Documents\GitHub\PorcelainAndAlabaster\PorcelainAndAlabaster\bin\Debug\net7.0\PorcelainAndAlabaster.staticwebassets.runtime.json
 C:\Users\jgage\Documents\GitHub\PorcelainAndAlabaster\PorcelainAndAlabaster\bin\Debug\net7.0\PorcelainAndAlabaster.exe
 C:\Users\jgage\Documents\GitHub\PorcelainAndAlabaster\PorcelainAndAlabaster\bin\Debug\net7.0\PorcelainAndAlabaster.deps.json
@@ -444,5 +446,3 @@ C:\Users\jgage\Documents\GitHub\PorcelainAndAlabaster\PorcelainAndAlabaster\obj\
 C:\Users\jgage\Documents\GitHub\PorcelainAndAlabaster\PorcelainAndAlabaster\obj\Debug\net7.0\PorcelainAndAlabaster.pdb
 C:\Users\jgage\Documents\GitHub\PorcelainAndAlabaster\PorcelainAndAlabaster\obj\Debug\net7.0\PorcelainAndAlabaster.genruntimeconfig.cache
 C:\Users\jgage\Documents\GitHub\PorcelainAndAlabaster\PorcelainAndAlabaster\obj\Debug\net7.0\ref\PorcelainAndAlabaster.dll
-C:\Users\jgage\Documents\GitHub\PorcelainAndAlabaster\PorcelainAndAlabaster\bin\Debug\net7.0\compilerconfig.json
-C:\Users\jgage\Documents\GitHub\PorcelainAndAlabaster\PorcelainAndAlabaster\bin\Debug\net7.0\tsconfig.json

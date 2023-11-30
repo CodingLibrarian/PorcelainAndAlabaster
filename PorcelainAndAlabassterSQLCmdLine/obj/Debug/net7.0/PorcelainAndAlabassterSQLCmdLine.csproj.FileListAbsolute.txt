@@ -1,0 +1,14 @@
+C:\Users\jgage\Documents\GitHub\PorcelainAndAlabaster\PorcelainAndAlabassterSQLCmdLine\obj\Debug\net7.0\PorcelainAndAlabassterSQLCmdLine.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jgage\Documents\GitHub\PorcelainAndAlabaster\PorcelainAndAlabassterSQLCmdLine\obj\Debug\net7.0\PorcelainAndAlabassterSQLCmdLine.AssemblyInfoInputs.cache
+C:\Users\jgage\Documents\GitHub\PorcelainAndAlabaster\PorcelainAndAlabassterSQLCmdLine\obj\Debug\net7.0\PorcelainAndAlabassterSQLCmdLine.AssemblyInfo.cs
+C:\Users\jgage\Documents\GitHub\PorcelainAndAlabaster\PorcelainAndAlabassterSQLCmdLine\obj\Debug\net7.0\PorcelainAndAlabassterSQLCmdLine.csproj.CoreCompileInputs.cache
+C:\Users\jgage\Documents\GitHub\PorcelainAndAlabaster\PorcelainAndAlabassterSQLCmdLine\bin\Debug\net7.0\PorcelainAndAlabassterSQLCmdLine.exe
+C:\Users\jgage\Documents\GitHub\PorcelainAndAlabaster\PorcelainAndAlabassterSQLCmdLine\bin\Debug\net7.0\PorcelainAndAlabassterSQLCmdLine.deps.json
+C:\Users\jgage\Documents\GitHub\PorcelainAndAlabaster\PorcelainAndAlabassterSQLCmdLine\bin\Debug\net7.0\PorcelainAndAlabassterSQLCmdLine.runtimeconfig.json
+C:\Users\jgage\Documents\GitHub\PorcelainAndAlabaster\PorcelainAndAlabassterSQLCmdLine\bin\Debug\net7.0\PorcelainAndAlabassterSQLCmdLine.dll
+C:\Users\jgage\Documents\GitHub\PorcelainAndAlabaster\PorcelainAndAlabassterSQLCmdLine\bin\Debug\net7.0\PorcelainAndAlabassterSQLCmdLine.pdb
+C:\Users\jgage\Documents\GitHub\PorcelainAndAlabaster\PorcelainAndAlabassterSQLCmdLine\obj\Debug\net7.0\PorcelainAndAlabassterSQLCmdLine.dll
+C:\Users\jgage\Documents\GitHub\PorcelainAndAlabaster\PorcelainAndAlabassterSQLCmdLine\obj\Debug\net7.0\refint\PorcelainAndAlabassterSQLCmdLine.dll
+C:\Users\jgage\Documents\GitHub\PorcelainAndAlabaster\PorcelainAndAlabassterSQLCmdLine\obj\Debug\net7.0\PorcelainAndAlabassterSQLCmdLine.pdb
+C:\Users\jgage\Documents\GitHub\PorcelainAndAlabaster\PorcelainAndAlabassterSQLCmdLine\obj\Debug\net7.0\PorcelainAndAlabassterSQLCmdLine.genruntimeconfig.cache
+C:\Users\jgage\Documents\GitHub\PorcelainAndAlabaster\PorcelainAndAlabassterSQLCmdLine\obj\Debug\net7.0\ref\PorcelainAndAlabassterSQLCmdLine.dll

@@ -9,8 +9,8 @@
       "PackagePath": "staticwebassets\\css\\compiledstylesheet.css"
     },
     {
-      "Id": "C:\\Users\\jgage\\Documents\\GitHub\\PorcelainAndAlabaster\\PorcelainAndAlabaster\\wwwroot\\css\\site.css",
-      "PackagePath": "staticwebassets\\css\\site.css"
+      "Id": "C:\\Users\\jgage\\Documents\\GitHub\\PorcelainAndAlabaster\\PorcelainAndAlabaster\\wwwroot\\css\\compiledstylesheet.min.css",
+      "PackagePath": "staticwebassets\\css\\compiledstylesheet.min.css"
     },
     {
       "Id": "C:\\Users\\jgage\\Documents\\GitHub\\PorcelainAndAlabaster\\PorcelainAndAlabaster\\wwwroot\\favicon.ico",
@@ -19,6 +19,14 @@
     {
       "Id": "C:\\Users\\jgage\\Documents\\GitHub\\PorcelainAndAlabaster\\PorcelainAndAlabaster\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "C:\\Users\\jgage\\Documents\\GitHub\\PorcelainAndAlabaster\\PorcelainAndAlabaster\\wwwroot\\js\\tsc.js",
+      "PackagePath": "staticwebassets\\js\\tsc.js"
+    },
+    {
+      "Id": "C:\\Users\\jgage\\Documents\\GitHub\\PorcelainAndAlabaster\\PorcelainAndAlabaster\\wwwroot\\js\\tsc.js.map",
+      "PackagePath": "staticwebassets\\js\\tsc.js.map"
     },
     {
       "Id": "C:\\Users\\jgage\\Documents\\GitHub\\PorcelainAndAlabaster\\PorcelainAndAlabaster\\wwwroot\\lib\\bootstrap\\LICENSE",

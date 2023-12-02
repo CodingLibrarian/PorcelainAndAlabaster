@@ -1,5 +1,26 @@
-﻿body .hidden {
+﻿body {
+  margin-bottom: 60px;
+}
+body .hidden {
   display: none;
 }
 
-/*# sourceMappingURL=data:application/json;charset=utf-8,%7B%22version%22:3,%22sourceRoot%22:%22%22,%22sources%22:%5B%22file:///C:/Users/jgage/Documents/GitHub/PorcelainAndAlabaster/PorcelainAndAlabaster/Sass/stylesheet.scss%22%5D,%22names%22:%5B%5D,%22mappings%22:%22AAEI;EACI%22%7D */
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+/*# sourceMappingURL=data:application/json;charset=utf-8,%7B%22version%22:3,%22sourceRoot%22:%22%22,%22sources%22:%5B%22file:///C:/Users/jgage/Documents/GitHub/PorcelainAndAlabaster/PorcelainAndAlabaster/Sass/stylesheet.scss%22%5D,%22names%22:%5B%5D,%22mappings%22:%22AACA;EAKI;;AAJA;EACI;;;AAMR;EACI;;;AAGJ;EACI;IACI;;;AAIR;EACI;;;AAGJ;EACI;EACA%22%7D */

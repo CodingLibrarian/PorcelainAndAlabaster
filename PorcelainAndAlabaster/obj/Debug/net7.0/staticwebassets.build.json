@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "5tdhkxp+wCLEte1UK1I1uAdmpbSGoW+lJE3Ow07pyDc=",
+  "Hash": "BPLqPRrAUWbLTbnv68k0sBy87D2+1MDhfe6b0dkY3AI=",
   "Source": "PorcelainAndAlabaster",
   "BasePath": "_content/PorcelainAndAlabaster",
   "Mode": "Default",
@@ -68,12 +68,12 @@
       "OriginalItemSpec": "wwwroot\\css\\compiledstylesheet.css"
     },
     {
-      "Identity": "C:\\Users\\jgage\\Documents\\GitHub\\PorcelainAndAlabaster\\PorcelainAndAlabaster\\wwwroot\\css\\site.css",
+      "Identity": "C:\\Users\\jgage\\Documents\\GitHub\\PorcelainAndAlabaster\\PorcelainAndAlabaster\\wwwroot\\css\\compiledstylesheet.min.css",
       "SourceId": "PorcelainAndAlabaster",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\jgage\\Documents\\GitHub\\PorcelainAndAlabaster\\PorcelainAndAlabaster\\wwwroot\\",
       "BasePath": "_content/PorcelainAndAlabaster",
-      "RelativePath": "css/site.css",
+      "RelativePath": "css/compiledstylesheet.min.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -82,7 +82,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\css\\site.css"
+      "OriginalItemSpec": "wwwroot\\css\\compiledstylesheet.min.css"
     },
     {
       "Identity": "C:\\Users\\jgage\\Documents\\GitHub\\PorcelainAndAlabaster\\PorcelainAndAlabaster\\wwwroot\\favicon.ico",
@@ -117,6 +117,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\site.js"
+    },
+    {
+      "Identity": "C:\\Users\\jgage\\Documents\\GitHub\\PorcelainAndAlabaster\\PorcelainAndAlabaster\\wwwroot\\js\\tsc.js",
+      "SourceId": "PorcelainAndAlabaster",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\jgage\\Documents\\GitHub\\PorcelainAndAlabaster\\PorcelainAndAlabaster\\wwwroot\\",
+      "BasePath": "_content/PorcelainAndAlabaster",
+      "RelativePath": "js/tsc.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\tsc.js"
+    },
+    {
+      "Identity": "C:\\Users\\jgage\\Documents\\GitHub\\PorcelainAndAlabaster\\PorcelainAndAlabaster\\wwwroot\\js\\tsc.js.map",
+      "SourceId": "PorcelainAndAlabaster",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\jgage\\Documents\\GitHub\\PorcelainAndAlabaster\\PorcelainAndAlabaster\\wwwroot\\",
+      "BasePath": "_content/PorcelainAndAlabaster",
+      "RelativePath": "js/tsc.js.map",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\tsc.js.map"
     },
     {
       "Identity": "C:\\Users\\jgage\\Documents\\GitHub\\PorcelainAndAlabaster\\PorcelainAndAlabaster\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",

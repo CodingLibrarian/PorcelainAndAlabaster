@@ -1,4 +1,9 @@
-{
-  "outputFile": "./wwwroot/css/compiledstylesheet.css",
-  "inputFile": "./Sass/stylesheet.scss"
-}
+[
+  {
+    "outputFile": "wwwroot/css/compiledstylesheet.css",
+    "inputFile": "Sass/stylesheet.scss",
+    "minify": { "enabled": true },
+    "includeInProject": true,
+    "options": { "sourceMap": true }
+  }
+]

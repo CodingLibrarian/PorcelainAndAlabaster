@@ -1,1 +1,6 @@
-﻿/// Main stylesheet only use imports to keep complierconfig.json simple
+﻿/// Main stylesheet
+body {
+    .hidden {
+        display: none;
+    }
+}

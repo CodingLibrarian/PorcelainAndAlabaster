@@ -10,6 +10,39 @@ body {
     }
 
     margin-bottom: 60px;
+    //Events Page
+    div {
+        &#event-carousel-container {
+            display: grid;
+            grid-template-columns: 15px, auto, 15px;
+            grid-template-rows: auto, 25px;
+
+            div.event-carousel-container {
+                display: grid;
+                grid-column: 2;
+                grid-row: 1;
+            }
+
+            ul.carousel-dots {
+                display: grid;
+                grid-column: 2;
+                grid-row: 2;
+                position: center;
+            }
+
+            div.left-carousel-arrow {
+                display: grid;
+                grid-column: 1;
+                grid-row: 1/2;
+            }
+
+            div.right-carousel-arrow {
+                display: grid;
+                grid-column: 3;
+                grid-row: 1/2;
+            }
+        }
+    }
 }
 
 html {

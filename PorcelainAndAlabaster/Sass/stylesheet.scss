@@ -1,12 +1,7 @@
 ﻿/// Main stylesheet
-@import "./FontAwesome/scss/fontawesome.scss";
 body {
     .hidden {
         display: none;
-    }
-
-    .navbar-toggler-icon {
-        @include fa-icon-solid($fa-var-bars);
     }
 
     margin-bottom: 60px;

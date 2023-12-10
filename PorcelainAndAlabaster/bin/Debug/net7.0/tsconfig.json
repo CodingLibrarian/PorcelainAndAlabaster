@@ -2,7 +2,7 @@
   "compilerOptions": {
     "noEmitOnError": true,
     "noImplicitAny": false,
-    "outFile": "./wwwroot/js/tsc.js",
+    "outFile": "./wwwroot/js/site.js",
     "removeComments": false,
     "sourceMap": true,
     "target": "es5"

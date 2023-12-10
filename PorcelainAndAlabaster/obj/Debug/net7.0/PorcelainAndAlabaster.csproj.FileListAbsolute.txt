@@ -460,3 +460,5 @@ C:\Users\jgage\Documents\GitHub\PorcelainAndAlabaster\PorcelainAndAlabaster\bin\
 C:\Users\jgage\Documents\GitHub\PorcelainAndAlabaster\PorcelainAndAlabaster\bin\Debug\net7.0\WebActivatorEx.dll
 C:\Users\jgage\Documents\GitHub\PorcelainAndAlabaster\PorcelainAndAlabaster\bin\Debug\net7.0\Antlr3.Runtime.dll
 C:\Users\jgage\Documents\GitHub\PorcelainAndAlabaster\PorcelainAndAlabaster\bin\Debug\net7.0\WebGrease.dll
+C:\Users\jgage\Documents\GitHub\PorcelainAndAlabaster\PorcelainAndAlabaster\bin\Debug\net7.0\package-lock.json
+C:\Users\jgage\Documents\GitHub\PorcelainAndAlabaster\PorcelainAndAlabaster\bin\Debug\net7.0\package.json

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "BPLqPRrAUWbLTbnv68k0sBy87D2+1MDhfe6b0dkY3AI=",
+  "Hash": "cqVGWZdMcVoMeAMEt/ZyIsUTdOlkHzvgCIV+04ygd74=",
   "Source": "PorcelainAndAlabaster",
   "BasePath": "_content/PorcelainAndAlabaster",
   "Mode": "Default",
@@ -119,12 +119,12 @@
       "OriginalItemSpec": "wwwroot\\js\\site.js"
     },
     {
-      "Identity": "C:\\Users\\jgage\\Documents\\GitHub\\PorcelainAndAlabaster\\PorcelainAndAlabaster\\wwwroot\\js\\tsc.js",
+      "Identity": "C:\\Users\\jgage\\Documents\\GitHub\\PorcelainAndAlabaster\\PorcelainAndAlabaster\\wwwroot\\js\\site.js.map",
       "SourceId": "PorcelainAndAlabaster",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\jgage\\Documents\\GitHub\\PorcelainAndAlabaster\\PorcelainAndAlabaster\\wwwroot\\",
       "BasePath": "_content/PorcelainAndAlabaster",
-      "RelativePath": "js/tsc.js",
+      "RelativePath": "js/site.js.map",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -133,24 +133,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\js\\tsc.js"
-    },
-    {
-      "Identity": "C:\\Users\\jgage\\Documents\\GitHub\\PorcelainAndAlabaster\\PorcelainAndAlabaster\\wwwroot\\js\\tsc.js.map",
-      "SourceId": "PorcelainAndAlabaster",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\jgage\\Documents\\GitHub\\PorcelainAndAlabaster\\PorcelainAndAlabaster\\wwwroot\\",
-      "BasePath": "_content/PorcelainAndAlabaster",
-      "RelativePath": "js/tsc.js.map",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\js\\tsc.js.map"
+      "OriginalItemSpec": "wwwroot\\js\\site.js.map"
     },
     {
       "Identity": "C:\\Users\\jgage\\Documents\\GitHub\\PorcelainAndAlabaster\\PorcelainAndAlabaster\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",

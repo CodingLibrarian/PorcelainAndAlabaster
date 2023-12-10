@@ -1,10 +1,10 @@
 ﻿function moveCarouselOne(moveForward: boolean) {
+    let currentDot = $('.carousel-dots > li.active');
+    let currentItem = $('.carousel-item-view > div.active');
     if (moveForward) {
-        let currentDot = $('.carousel-dots.active');
-        let currentItem = $('.carousel-item-view > div.active');
         currentDot.removeClass('active');
         currentItem.removeClass('active');
-        if (currentDot.next('li') !== null || currentDot.next('li') !== undefined) {
+        if (currentDot.next('li') !== null && currentDot.next('li') !== undefined && currentDot.next('li').length > 0) {
             currentDot.next('li').addClass('active');
             currentItem.next('div').addClass('active');
         } else {
@@ -12,11 +12,9 @@
             currentItem.parent('div').children().first().addClass('active');
         }
     } else {
-        let currentDot = $('.carousel-dots.active');
-        let currentItem = $('.carousel-item-view > div.active');
         currentDot.removeClass('active');
         currentItem.removeClass('active');
-        if (currentDot.prev('li') !== null || currentDot.prev('li') !== undefined) {
+        if (currentDot.prev('li') !== null && currentDot.prev('li') !== undefined && currentDot.prev('li').length > 0) {
             currentDot.prev('li').addClass('active');
             currentItem.prev('div').addClass('active');
         } else {
@@ -24,5 +22,7 @@
             currentItem.parent('div').children().last().addClass('active');
         }
     }
-
 }
+
+$('.left-carousel-arrow > button').on('click', (event: JQuery.Event) => { moveCarouselOne(false) });
+$('.right-carousel-arrow > button').on('click', (event: JQuery.Event) => { moveCarouselOne(true) });

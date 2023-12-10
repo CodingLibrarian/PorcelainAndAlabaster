@@ -21,12 +21,8 @@
       "PackagePath": "staticwebassets\\js\\site.js"
     },
     {
-      "Id": "C:\\Users\\jgage\\Documents\\GitHub\\PorcelainAndAlabaster\\PorcelainAndAlabaster\\wwwroot\\js\\tsc.js",
-      "PackagePath": "staticwebassets\\js\\tsc.js"
-    },
-    {
-      "Id": "C:\\Users\\jgage\\Documents\\GitHub\\PorcelainAndAlabaster\\PorcelainAndAlabaster\\wwwroot\\js\\tsc.js.map",
-      "PackagePath": "staticwebassets\\js\\tsc.js.map"
+      "Id": "C:\\Users\\jgage\\Documents\\GitHub\\PorcelainAndAlabaster\\PorcelainAndAlabaster\\wwwroot\\js\\site.js.map",
+      "PackagePath": "staticwebassets\\js\\site.js.map"
     },
     {
       "Id": "C:\\Users\\jgage\\Documents\\GitHub\\PorcelainAndAlabaster\\PorcelainAndAlabaster\\wwwroot\\lib\\bootstrap\\LICENSE",

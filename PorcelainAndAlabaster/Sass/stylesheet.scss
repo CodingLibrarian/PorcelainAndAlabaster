@@ -35,8 +35,11 @@ body {
 
                     &.active {
                         display: block;
-                        height: inherit;
-                        width: inherit;
+
+                        img {
+                            height: 75vh;
+                            width: 75vw;
+                        }
                     }
                 }
             }
@@ -45,7 +48,9 @@ body {
                 grid-column: 2;
                 grid-row: 2;
                 position: center;
-                padding-left: 30vw;
+                padding-left: 20vw;
+                padding-top: 10px;
+
                 li {
                     clear: none;
                     display: inline;
@@ -53,6 +58,20 @@ body {
                     height: 10vh;
                     width: 10vw;
                     color: black;
+
+                    div {
+                        background-image: url("../wwwroot/icons/EventDotNotSelected.svg");
+                        height: 50px;
+                        width: 50px;
+                    }
+
+                    &.active {
+                        div {
+                            background-image: url("../wwwroot/icons/EventDotSelected.svg");
+                            height: 50px;
+                            width: 50px;
+                        }
+                    }
                 }
             }
 
@@ -60,12 +79,26 @@ body {
                 display: grid;
                 grid-column: 1;
                 grid-row: 1/2;
+
+                div {
+                    background-image: url("../wwwroot/icons/ReverseButton.svg");
+                    height: 50px;
+                    width: 50px;
+                    margin-top: 32.5vh;
+                }
             }
 
             div.right-carousel-arrow {
                 display: grid;
                 grid-column: 3;
                 grid-row: 1/2;
+
+                div {
+                    background-image: url("../wwwroot/icons/ForwardButton.svg");
+                    height: 50px;
+                    width: 50px;
+                    margin-top: 32.5vh;
+                }
             }
         }
     }

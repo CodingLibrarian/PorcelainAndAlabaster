@@ -24,5 +24,5 @@
     }
 }
 
-$('.left-carousel-arrow > button').on('click', (event: JQuery.Event) => { moveCarouselOne(false) });
-$('.right-carousel-arrow > button').on('click', (event: JQuery.Event) => { moveCarouselOne(true) });
+$('.left-carousel-arrow > div').on('click', (event: JQuery.Event) => { moveCarouselOne(false) });
+$('.right-carousel-arrow > div').on('click', (event: JQuery.Event) => { moveCarouselOne(true) });

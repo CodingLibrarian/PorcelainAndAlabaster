@@ -440,7 +440,6 @@ C:\Users\jgage\Documents\GitHub\PorcelainAndAlabaster\PorcelainAndAlabaster\obj\
 C:\Users\jgage\Documents\GitHub\PorcelainAndAlabaster\PorcelainAndAlabaster\obj\Debug\net7.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
 C:\Users\jgage\Documents\GitHub\PorcelainAndAlabaster\PorcelainAndAlabaster\obj\Debug\net7.0\scopedcss\bundle\PorcelainAndAlabaster.styles.css
 C:\Users\jgage\Documents\GitHub\PorcelainAndAlabaster\PorcelainAndAlabaster\obj\Debug\net7.0\scopedcss\projectbundle\PorcelainAndAlabaster.bundle.scp.css
-C:\Users\jgage\Documents\GitHub\PorcelainAndAlabaster\PorcelainAndAlabaster\obj\Debug\net7.0\PorcelainAndAlabaster.csproj.CopyComplete
 C:\Users\jgage\Documents\GitHub\PorcelainAndAlabaster\PorcelainAndAlabaster\obj\Debug\net7.0\PorcelainAndAlabaster.dll
 C:\Users\jgage\Documents\GitHub\PorcelainAndAlabaster\PorcelainAndAlabaster\obj\Debug\net7.0\refint\PorcelainAndAlabaster.dll
 C:\Users\jgage\Documents\GitHub\PorcelainAndAlabaster\PorcelainAndAlabaster\obj\Debug\net7.0\PorcelainAndAlabaster.pdb
@@ -448,3 +447,5 @@ C:\Users\jgage\Documents\GitHub\PorcelainAndAlabaster\PorcelainAndAlabaster\obj\
 C:\Users\jgage\Documents\GitHub\PorcelainAndAlabaster\PorcelainAndAlabaster\obj\Debug\net7.0\ref\PorcelainAndAlabaster.dll
 C:\Users\jgage\Documents\GitHub\PorcelainAndAlabaster\PorcelainAndAlabaster\bin\Debug\net7.0\package-lock.json
 C:\Users\jgage\Documents\GitHub\PorcelainAndAlabaster\PorcelainAndAlabaster\bin\Debug\net7.0\package.json
+C:\Users\jgage\Documents\GitHub\PorcelainAndAlabaster\PorcelainAndAlabaster\obj\Debug\net7.0\PorcelainAndAlabaster.sourcelink.json
+C:\Users\jgage\Documents\GitHub\PorcelainAndAlabaster\PorcelainAndAlabaster\obj\Debug\net7.0\Porcelai.51A8526D.Up2Date

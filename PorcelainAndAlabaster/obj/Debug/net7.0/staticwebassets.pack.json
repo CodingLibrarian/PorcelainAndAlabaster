@@ -17,6 +17,22 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\jgage\\Documents\\GitHub\\PorcelainAndAlabaster\\PorcelainAndAlabaster\\wwwroot\\icons\\EventDotNotSelected.svg",
+      "PackagePath": "staticwebassets\\icons\\EventDotNotSelected.svg"
+    },
+    {
+      "Id": "C:\\Users\\jgage\\Documents\\GitHub\\PorcelainAndAlabaster\\PorcelainAndAlabaster\\wwwroot\\icons\\EventDotSelected.svg",
+      "PackagePath": "staticwebassets\\icons\\EventDotSelected.svg"
+    },
+    {
+      "Id": "C:\\Users\\jgage\\Documents\\GitHub\\PorcelainAndAlabaster\\PorcelainAndAlabaster\\wwwroot\\icons\\ForwardButton.svg",
+      "PackagePath": "staticwebassets\\icons\\ForwardButton.svg"
+    },
+    {
+      "Id": "C:\\Users\\jgage\\Documents\\GitHub\\PorcelainAndAlabaster\\PorcelainAndAlabaster\\wwwroot\\icons\\ReverseButton.svg",
+      "PackagePath": "staticwebassets\\icons\\ReverseButton.svg"
+    },
+    {
       "Id": "C:\\Users\\jgage\\Documents\\GitHub\\PorcelainAndAlabaster\\PorcelainAndAlabaster\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },

@@ -7,6 +7,15 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Sass\FontAwesome\**" />
+    <Content Remove="Sass\FontAwesome\**" />
+    <EmbeddedResource Remove="Sass\FontAwesome\**" />
+    <None Remove="Sass\FontAwesome\**" />
+    <SassFile Remove="Sass\FontAwesome\**" />
+    <TypeScriptCompile Remove="Sass\FontAwesome\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="LibSassBuilder" Version="3.0.0" />
     <PackageReference Include="Microsoft.TypeScript.MSBuild" Version="5.2.2">
       <PrivateAssets>all</PrivateAssets>
@@ -14,10 +23,6 @@
     </PackageReference>
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="7.0.11" />
     <PackageReference Include="Npm" Version="3.5.2" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Sass\FontAwesome\" />
   </ItemGroup>
 
 </Project>

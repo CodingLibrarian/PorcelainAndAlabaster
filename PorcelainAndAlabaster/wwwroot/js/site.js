@@ -26,6 +26,6 @@ function moveCarouselOne(moveForward) {
         }
     }
 }
-$('.left-carousel-arrow > button').on('click', function (event) { moveCarouselOne(false); });
-$('.right-carousel-arrow > button').on('click', function (event) { moveCarouselOne(true); });
+$('.left-carousel-arrow > div').on('click', function (event) { moveCarouselOne(false); });
+$('.right-carousel-arrow > div').on('click', function (event) { moveCarouselOne(true); });
 //# sourceMappingURL=site.js.map

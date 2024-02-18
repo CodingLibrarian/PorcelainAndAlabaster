@@ -28,14 +28,17 @@ body div#event-carousel-container div.carousel-item-view div.item {
 }
 body div#event-carousel-container div.carousel-item-view div.item.active {
   display: block;
-  height: inherit;
-  width: inherit;
+}
+body div#event-carousel-container div.carousel-item-view div.item.active img {
+  height: 75vh;
+  width: 75vw;
 }
 body div#event-carousel-container ul.carousel-dots {
   grid-column: 2;
   grid-row: 2;
   position: center;
-  padding-left: 30vw;
+  padding-left: 20vw;
+  padding-top: 10px;
 }
 body div#event-carousel-container ul.carousel-dots li {
   clear: none;
@@ -45,15 +48,37 @@ body div#event-carousel-container ul.carousel-dots li {
   width: 10vw;
   color: black;
 }
+body div#event-carousel-container ul.carousel-dots li div {
+  background-image: url("../icons/EventDotNotSelected.svg");
+  height: 50px;
+  width: 50px;
+}
+body div#event-carousel-container ul.carousel-dots li.active div {
+  background-image: url("../icons/EventDotSelected.svg");
+  height: 50px;
+  width: 50px;
+}
 body div#event-carousel-container div.left-carousel-arrow {
   display: grid;
   grid-column: 1;
   grid-row: 1/2;
 }
+body div#event-carousel-container div.left-carousel-arrow div {
+  background-image: url("../icons/ReverseButton.svg");
+  height: 50px;
+  width: 50px;
+  margin-top: 32.5vh;
+}
 body div#event-carousel-container div.right-carousel-arrow {
   display: grid;
   grid-column: 3;
   grid-row: 1/2;
+}
+body div#event-carousel-container div.right-carousel-arrow div {
+  background-image: url("../icons/ForwardButton.svg");
+  height: 50px;
+  width: 50px;
+  margin-top: 32.5vh;
 }
 
 html {
@@ -74,4 +99,4 @@ html {
   min-height: 100%;
 }
 
-/*# sourceMappingURL=data:application/json;charset=utf-8,%7B%22version%22:3,%22sourceRoot%22:%22%22,%22sources%22:%5B%22file:///C:/Users/jgage/Documents/GitHub/PorcelainAndAlabaster/PorcelainAndAlabaster/Sass/stylesheet.scss%22%5D,%22names%22:%5B%5D,%22mappings%22:%22AACA;EACI;EACA;EAYA;;AAVA;EACI;;AAGJ;EACI;EACA;EACA;;AAMA;EACI;EACA;EACA;EACA;EACA;;AAEA;EACI;EACA;EACA;;AAIA;EACI;;AAEA;EACI;EACA;EACA;;AAKZ;EACI;EACA;EACA;EACA;;AACA;EACI;EACA;EACA;EACA;EACA;EACA;;AAIR;EACI;EACA;EACA;;AAGJ;EACI;EACA;EACA;;;AAMhB;EACI;;;AAGJ;EACI;IACI;;;AAIR;EACI;;;AAIJ;EACI;EACA%22%7D */
+/*# sourceMappingURL=data:application/json;charset=utf-8,%7B%22version%22:3,%22sourceRoot%22:%22%22,%22sources%22:%5B%22file:///C:/Users/jgage/Documents/GitHub/PorcelainAndAlabaster/PorcelainAndAlabaster/Sass/stylesheet.scss%22%5D,%22names%22:%5B%5D,%22mappings%22:%22AACA;EACI;EACA;EAYA;;AAVA;EACI;;AAGJ;EACI;EACA;EACA;;AAMA;EACI;EACA;EACA;EACA;EACA;;AAEA;EACI;EACA;EACA;;AAIA;EACI;;AAEA;EACI;;AAEA;EACI;EACA;;AAMhB;EACI;EACA;EACA;EACA;EACA;;AAEA;EACI;EACA;EACA;EACA;EACA;EACA;;AAEA;EACI;EACA;EACA;;AAIA;EACI;EACA;EACA;;AAMhB;EACI;EACA;EACA;;AAEA;EACI;EACA;EACA;EACA;;AAIR;EACI;EACA;EACA;;AAEA;EACI;EACA;EACA;EACA;;;AAOpB;EACI;;;AAGJ;EACI;IACI;;;AAIR;EACI;;;AAIJ;EACI;EACA%22%7D */

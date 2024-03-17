@@ -12,6 +12,30 @@ body {
         height: 100vw;
         width: 100vh;
     }
+    //Main Nav Bar
+    header {
+        nav {
+            display: inline-block;
+
+            ul {
+                z-index: 2;
+                display: block;
+                position: absolute;
+                top: 0;
+                left: 75vw;
+                
+                li {
+                    display: block;
+                    clear: right;
+                    background-color: darkgray;
+
+                    a {
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
 
     margin-bottom: 60px;
     //Events Page

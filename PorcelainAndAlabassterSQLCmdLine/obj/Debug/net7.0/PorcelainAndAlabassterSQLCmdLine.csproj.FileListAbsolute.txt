@@ -12,3 +12,4 @@ C:\Users\jgage\Documents\GitHub\PorcelainAndAlabaster\PorcelainAndAlabassterSQLC
 C:\Users\jgage\Documents\GitHub\PorcelainAndAlabaster\PorcelainAndAlabassterSQLCmdLine\obj\Debug\net7.0\PorcelainAndAlabassterSQLCmdLine.pdb
 C:\Users\jgage\Documents\GitHub\PorcelainAndAlabaster\PorcelainAndAlabassterSQLCmdLine\obj\Debug\net7.0\PorcelainAndAlabassterSQLCmdLine.genruntimeconfig.cache
 C:\Users\jgage\Documents\GitHub\PorcelainAndAlabaster\PorcelainAndAlabassterSQLCmdLine\obj\Debug\net7.0\ref\PorcelainAndAlabassterSQLCmdLine.dll
+C:\Users\jgage\Documents\GitHub\PorcelainAndAlabaster\PorcelainAndAlabassterSQLCmdLine\obj\Debug\net7.0\PorcelainAndAlabassterSQLCmdLine.sourcelink.json

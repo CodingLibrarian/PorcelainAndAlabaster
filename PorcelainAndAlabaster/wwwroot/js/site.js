@@ -28,4 +28,18 @@ function moveCarouselOne(moveForward) {
 }
 $('.left-carousel-arrow > div').on('click', function (event) { moveCarouselOne(false); });
 $('.right-carousel-arrow > div').on('click', function (event) { moveCarouselOne(true); });
+function showMainMenu() {
+    var mainMenu = $('.navbar-main-menu-toggler');
+    if (mainMenu.hasClass('active')) {
+        $('.navbar-nav').addClass('hidden');
+        mainMenu.removeClass('active');
+        mainMenu.addClass('inactive');
+    }
+    else {
+        $('.navbar-nav').removeClass('hidden');
+        mainMenu.removeClass('inactive');
+        mainMenu.addClass('active');
+    }
+}
+$('.navbar-main-menu-toggler').on('click', function (event) { showMainMenu(); });
 //# sourceMappingURL=site.js.map

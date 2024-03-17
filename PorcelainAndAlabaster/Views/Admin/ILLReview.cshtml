@@ -1,7 +1,36 @@
 ﻿
 @{
     ViewData["Title"] = "ILLReview";
-    // Get this to interact with ILLiad
+    //TODO: Get this to interact with ILLiad
+    //TODO: Get this working with VM load of ILL approval types
 }
-<h1>ILLReview</h1>
-
+<h1>ILL Request Review</h1>
+<div id="ill-request-review">
+    <label id="ill-request-first-name-label">First Name</label>
+    <input id="ill-request-first-name-input" type="text" />
+    <label id="ill-request-last-name-label">Last Name</label>
+    <input id="ill-request-last-name-input" type="text" />
+    <label id="ill-request-email-label">Email</label>
+    <input id="ill-request-email-input" type="text" />
+    <label id="ill-request-email-label">Library Card Number</label>
+    <input id="ill-request-last-name-input" type="text" />
+    <label id="ill-request-title-label">Title</label>
+    <input id="ill-request-title-input" type="text" />
+    <label id="ill-request-author-label">Author</label>
+    <input id="ill-request-author-input" type="text" />
+    <label id="ill-request-journal-label">Journal</label>
+    <input id="ill-request-journal-input" type="text" />
+    <label id="ill-request-volume-label">Volume</label>
+    <input id="ill-request-volume-input" type="text" />
+    <label id="ill-request-year-label">Year</label>
+    <input id="ill-request-year-input" type="text" />
+    <label id="ill-request-isbn-label">ISBN</label>
+    <input id="ill-request-isbn-input" type="text" />
+</div>
+<form id="ill-reqeust-review">
+   <label id="ill-request-approval-label">Request</label>
+   <select>
+       <option></option>
+   </select>
+   <textarea id="ill-request-review-comment"></textarea>
+</form>

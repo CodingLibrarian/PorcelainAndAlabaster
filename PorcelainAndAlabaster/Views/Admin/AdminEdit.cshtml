@@ -1,11 +1,9 @@
 ﻿
 @{
-    //TODO: Load values from VM or setup a blank load for new patron
-    //TODO: Buliding search linking for children
-    //TODO: Load patron types from DB in settings menu
-    ViewData["Title"] = "Patron";
+    //TODO: Load values from VM or setup a blank load for new admin
+    ViewData["Title"] = "Admin Edit";
 }
-<h1>Patron</h1>
+<h1>Admin</h1>
 <form>
     <label id="first-name-label">First Name</label>
     <input id="first-name-input" />
@@ -17,10 +15,9 @@
     <input id="email-input"/>
     <label id="phone-label">Phone</label>
     <input id="phone-input"/>
-    <label id="patron-type-label">Patron Type</label>
-    <select id="patron-type">
-
+    <label id="active-input-label">Active</label>
+    <select id="active-select">
+        <option id="active-option">Active</option>
+        <option id="inactive-option">Inactive</option>
     </select>
-    <label id="expiration-date-label">Expiration Date</label>
-    <input id="expiration-date-input" type="date"/>
 </form>

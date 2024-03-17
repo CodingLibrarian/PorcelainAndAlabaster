@@ -18,7 +18,15 @@ namespace PorcelainAndAlabaster.Controllers
         {
             return View();
         }
+        public IActionResult AdminEdit()
+        {
+            return View();
+        }
         public IActionResult Cataloger()
+        {
+            return View();
+        }
+        public IActionResult EventsEditor()
         {
             return View();
         }

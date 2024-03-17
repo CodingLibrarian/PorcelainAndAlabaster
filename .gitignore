@@ -1,3 +1,6 @@
 
 .vs/PorcelainAndAlabaster/config/applicationhost.config
 PorcelainAndAlabaster/obj/Debug/net7.0/PorcelainAndAlabaster.csproj.FileListAbsolute.txt
+.vs/PorcelainAndAlabaster/DesignTimeBuild/.dtbcache.v2
+.vs/PorcelainAndAlabaster/v17/.suo
+*.vsidx

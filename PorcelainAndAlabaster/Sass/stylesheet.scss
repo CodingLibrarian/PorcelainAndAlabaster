@@ -23,7 +23,7 @@ body {
                 position: absolute;
                 top: 0;
                 left: 75vw;
-                
+
                 li {
                     display: block;
                     clear: right;
@@ -38,6 +38,11 @@ body {
     }
 
     margin-bottom: 60px;
+
+    form {
+        display: grid;
+        grid-template-columns: 1fr, 1fr;
+    }
     //Events Page
     div {
         &#event-carousel-container {
@@ -124,6 +129,11 @@ body {
                     margin-top: 32.5vh;
                 }
             }
+        }
+
+        #ill-request-review {
+            display: grid;
+            grid-template-columns: 1fr, 1fr;
         }
     }
 }

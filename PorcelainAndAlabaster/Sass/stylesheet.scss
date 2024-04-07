@@ -131,6 +131,110 @@ body {
             }
         }
 
+        &#event-carousel-container-editor {
+            display: grid;
+            grid-template-columns: 1fr, 8fr, 1fr;
+            grid-template-rows: 9fr, 1fr, 1fr, 1fr, 1fr;
+            height: 75vh;
+            width: 100vw;
+
+            div.carousel-item-view {
+                div.item {
+                    display: none;
+
+                    &.active {
+                        display: block;
+
+                        img {
+                            display: grid;
+                            height: 75vh;
+                            width: 75vw;
+                            grid-column: 2;
+                            grid-row: 1;
+                        }
+
+                        .event-title-label, .event-title {
+                            display: grid;
+                            grid-column: 2;
+                            grid-row: 2;
+                            width: 30vw;
+                        }
+
+                        .event-description-label, .event-description {
+                            display: grid;
+                            grid-column: 2;
+                            grid-row: 2;
+                            width: 30vw;
+                        }
+
+                        .event-image-upload-label, .event-image-upload {
+                            display: grid;
+                            grid-column: 2;
+                            grid-row: 2;
+                            width: 30vw;
+                        }
+                    }
+                }
+            }
+
+            ul.carousel-dots {
+                grid-column: 2;
+                grid-row: 5;
+                position: center;
+                padding-left: 20vw;
+                padding-top: 10px;
+
+                li {
+                    clear: none;
+                    display: inline;
+                    float: left;
+                    height: 10vh;
+                    width: 10vw;
+                    color: black;
+
+                    div {
+                        background-image: url("../wwwroot/icons/EventDotNotSelected.svg");
+                        height: 50px;
+                        width: 50px;
+                    }
+
+                    &.active {
+                        div {
+                            background-image: url("../wwwroot/icons/EventDotSelected.svg");
+                            height: 50px;
+                            width: 50px;
+                        }
+                    }
+                }
+            }
+
+            div.left-carousel-arrow {
+                display: grid;
+                grid-column: 1;
+                grid-row: 1/5;
+
+                div {
+                    background-image: url("../wwwroot/icons/ReverseButton.svg");
+                    height: 50px;
+                    width: 50px;
+                    margin-top: 32.5vh;
+                }
+            }
+
+            div.right-carousel-arrow {
+                display: grid;
+                grid-column: 3;
+                grid-row: 1/5;
+
+                div {
+                    background-image: url("../wwwroot/icons/ForwardButton.svg");
+                    height: 50px;
+                    width: 50px;
+                    margin-top: 32.5vh;
+                }
+            }
+        }
+
         #ill-request-review {
             display: grid;
             grid-template-columns: 1fr, 1fr;

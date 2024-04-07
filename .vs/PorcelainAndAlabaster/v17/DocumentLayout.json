@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\jgage\\Documents\\GitHub\\PorcelainAndAlabaster\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{5138178C-4D86-47F7-AA13-F5222CA3127F}|PorcelainAndAlabaster\\PorcelainAndAlabaster.csproj|c:\\users\\jgage\\documents\\github\\porcelainandalabaster\\porcelainandalabaster\\views\\admin\\eventseditor.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5138178C-4D86-47F7-AA13-F5222CA3127F}|PorcelainAndAlabaster\\PorcelainAndAlabaster.csproj|solutionrelative:porcelainandalabaster\\views\\admin\\eventseditor.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{5138178C-4D86-47F7-AA13-F5222CA3127F}|PorcelainAndAlabaster\\PorcelainAndAlabaster.csproj|c:\\users\\jgage\\documents\\github\\porcelainandalabaster\\porcelainandalabaster\\sass\\stylesheet.scss||{181FE41B-5A5D-479F-9F8F-BF665F4EBC2A}",
       "RelativeMoniker": "D:0:0:{5138178C-4D86-47F7-AA13-F5222CA3127F}|PorcelainAndAlabaster\\PorcelainAndAlabaster.csproj|solutionrelative:porcelainandalabaster\\sass\\stylesheet.scss||{181FE41B-5A5D-479F-9F8F-BF665F4EBC2A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5138178C-4D86-47F7-AA13-F5222CA3127F}|PorcelainAndAlabaster\\PorcelainAndAlabaster.csproj|c:\\users\\jgage\\documents\\github\\porcelainandalabaster\\porcelainandalabaster\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{5138178C-4D86-47F7-AA13-F5222CA3127F}|PorcelainAndAlabaster\\PorcelainAndAlabaster.csproj|solutionrelative:porcelainandalabaster\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5138178C-4D86-47F7-AA13-F5222CA3127F}|PorcelainAndAlabaster\\PorcelainAndAlabaster.csproj|c:\\users\\jgage\\documents\\github\\porcelainandalabaster\\porcelainandalabaster\\typescript\\layoutindex.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
-      "RelativeMoniker": "D:0:0:{5138178C-4D86-47F7-AA13-F5222CA3127F}|PorcelainAndAlabaster\\PorcelainAndAlabaster.csproj|solutionrelative:porcelainandalabaster\\typescript\\layoutindex.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+      "AbsoluteMoniker": "D:0:0:{5138178C-4D86-47F7-AA13-F5222CA3127F}|PorcelainAndAlabaster\\PorcelainAndAlabaster.csproj|c:\\users\\jgage\\documents\\github\\porcelainandalabaster\\porcelainandalabaster\\views\\admin\\cataloger.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5138178C-4D86-47F7-AA13-F5222CA3127F}|PorcelainAndAlabaster\\PorcelainAndAlabaster.csproj|solutionrelative:porcelainandalabaster\\views\\admin\\cataloger.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,51 +22,45 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "stylesheet.scss",
               "DocumentMoniker": "C:\\Users\\jgage\\Documents\\GitHub\\PorcelainAndAlabaster\\PorcelainAndAlabaster\\Sass\\stylesheet.scss",
               "RelativeDocumentMoniker": "PorcelainAndAlabaster\\Sass\\stylesheet.scss",
               "ToolTip": "C:\\Users\\jgage\\Documents\\GitHub\\PorcelainAndAlabaster\\PorcelainAndAlabaster\\Sass\\stylesheet.scss",
               "RelativeToolTip": "PorcelainAndAlabaster\\Sass\\stylesheet.scss",
-              "ViewState": "AQIAAA8AAAAAAAAAAAAAACAAAAAlAAAA",
+              "ViewState": "AQIAAJcAAAAAAAAAAAAkwK0AAAAoAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002663|",
-              "WhenOpened": "2024-03-17T16:30:26.697Z",
+              "WhenOpened": "2024-04-07T19:07:03.318Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "EventsEditor.cshtml",
+              "DocumentMoniker": "C:\\Users\\jgage\\Documents\\GitHub\\PorcelainAndAlabaster\\PorcelainAndAlabaster\\Views\\Admin\\EventsEditor.cshtml",
+              "RelativeDocumentMoniker": "PorcelainAndAlabaster\\Views\\Admin\\EventsEditor.cshtml",
+              "ToolTip": "C:\\Users\\jgage\\Documents\\GitHub\\PorcelainAndAlabaster\\PorcelainAndAlabaster\\Views\\Admin\\EventsEditor.cshtml",
+              "RelativeToolTip": "PorcelainAndAlabaster\\Views\\Admin\\EventsEditor.cshtml",
+              "ViewState": "AQIAACEAAAAAAAAAAAAqwDUAAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-07T19:03:26.726Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "LayoutIndex.ts",
-              "DocumentMoniker": "C:\\Users\\jgage\\Documents\\GitHub\\PorcelainAndAlabaster\\PorcelainAndAlabaster\\TypeScript\\LayoutIndex.ts",
-              "RelativeDocumentMoniker": "PorcelainAndAlabaster\\TypeScript\\LayoutIndex.ts",
-              "ToolTip": "C:\\Users\\jgage\\Documents\\GitHub\\PorcelainAndAlabaster\\PorcelainAndAlabaster\\TypeScript\\LayoutIndex.ts",
-              "RelativeToolTip": "PorcelainAndAlabaster\\TypeScript\\LayoutIndex.ts",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAmAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2024-03-17T16:20:00.634Z",
-              "EditorCaption": ""
-            }
-          ]
-        },
-        {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 0,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\jgage\\Documents\\GitHub\\PorcelainAndAlabaster\\PorcelainAndAlabaster\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "PorcelainAndAlabaster\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\jgage\\Documents\\GitHub\\PorcelainAndAlabaster\\PorcelainAndAlabaster\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "PorcelainAndAlabaster\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AQIAAAwAAAAAAAAAAAAAABwAAAAmAAAA",
+              "Title": "Cataloger.cshtml",
+              "DocumentMoniker": "C:\\Users\\jgage\\Documents\\GitHub\\PorcelainAndAlabaster\\PorcelainAndAlabaster\\Views\\Admin\\Cataloger.cshtml",
+              "RelativeDocumentMoniker": "PorcelainAndAlabaster\\Views\\Admin\\Cataloger.cshtml",
+              "ToolTip": "C:\\Users\\jgage\\Documents\\GitHub\\PorcelainAndAlabaster\\PorcelainAndAlabaster\\Views\\Admin\\Cataloger.cshtml",
+              "RelativeToolTip": "PorcelainAndAlabaster\\Views\\Admin\\Cataloger.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-03-17T16:21:03.549Z",
+              "WhenOpened": "2024-04-07T19:01:52.538Z",
               "EditorCaption": ""
             }
           ]

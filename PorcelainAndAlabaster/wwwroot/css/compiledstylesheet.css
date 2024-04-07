@@ -102,6 +102,91 @@ body div#event-carousel-container div.right-carousel-arrow div {
   width: 50px;
   margin-top: 32.5vh;
 }
+body div#event-carousel-container-editor {
+  display: grid;
+  grid-template-columns: 1fr, 8fr, 1fr;
+  grid-template-rows: 9fr, 1fr, 1fr, 1fr, 1fr;
+  height: 75vh;
+  width: 100vw;
+}
+body div#event-carousel-container-editor div.carousel-item-view div.item {
+  display: none;
+}
+body div#event-carousel-container-editor div.carousel-item-view div.item.active {
+  display: block;
+}
+body div#event-carousel-container-editor div.carousel-item-view div.item.active img {
+  display: grid;
+  height: 75vh;
+  width: 75vw;
+  grid-column: 2;
+  grid-row: 1;
+}
+body div#event-carousel-container-editor div.carousel-item-view div.item.active .event-title-label, body div#event-carousel-container-editor div.carousel-item-view div.item.active .event-title {
+  display: grid;
+  grid-column: 2;
+  grid-row: 2;
+  width: 30vw;
+}
+body div#event-carousel-container-editor div.carousel-item-view div.item.active .event-description-label, body div#event-carousel-container-editor div.carousel-item-view div.item.active .event-description {
+  display: grid;
+  grid-column: 2;
+  grid-row: 2;
+  width: 30vw;
+}
+body div#event-carousel-container-editor div.carousel-item-view div.item.active .event-image-upload-label, body div#event-carousel-container-editor div.carousel-item-view div.item.active .event-image-upload {
+  display: grid;
+  grid-column: 2;
+  grid-row: 2;
+  width: 30vw;
+}
+body div#event-carousel-container-editor ul.carousel-dots {
+  grid-column: 2;
+  grid-row: 5;
+  position: center;
+  padding-left: 20vw;
+  padding-top: 10px;
+}
+body div#event-carousel-container-editor ul.carousel-dots li {
+  clear: none;
+  display: inline;
+  float: left;
+  height: 10vh;
+  width: 10vw;
+  color: black;
+}
+body div#event-carousel-container-editor ul.carousel-dots li div {
+  background-image: url("../icons/EventDotNotSelected.svg");
+  height: 50px;
+  width: 50px;
+}
+body div#event-carousel-container-editor ul.carousel-dots li.active div {
+  background-image: url("../icons/EventDotSelected.svg");
+  height: 50px;
+  width: 50px;
+}
+body div#event-carousel-container-editor div.left-carousel-arrow {
+  display: grid;
+  grid-column: 1;
+  grid-row: 1/5;
+}
+body div#event-carousel-container-editor div.left-carousel-arrow div {
+  background-image: url("../icons/ReverseButton.svg");
+  height: 50px;
+  width: 50px;
+  margin-top: 32.5vh;
+}
+body div#event-carousel-container-editor div.right-carousel-arrow {
+  display: grid;
+  grid-column: 3;
+  grid-row: 1/5;
+}
+body div#event-carousel-container-editor div.right-carousel-arrow div {
+  background-image: url("../icons/ForwardButton.svg");
+  height: 50px;
+  width: 50px;
+  margin-top: 32.5vh;
+}
 body div #ill-request-review {
   display: grid;
   grid-template-columns: 1fr, 1fr;
@@ -125,4 +210,4 @@ html {
   min-height: 100%;
 }
 
-/*# sourceMappingURL=data:application/json;charset=utf-8,%7B%22version%22:3,%22sourceRoot%22:%22%22,%22sources%22:%5B%22file:///C:/Users/jgage/Documents/GitHub/PorcelainAndAlabaster/PorcelainAndAlabaster/Sass/stylesheet.scss%22%5D,%22names%22:%5B%5D,%22mappings%22:%22AACA;EACI;EACA;EAoCA;;AAlCA;EACI;;AAGJ;EACI;EACA;EACA;;AAIA;EACI;;AAEA;EACI;EACA;EACA;EACA;EACA;;AAEA;EACI;EACA;EACA;;AAEA;EACI;;AASpB;EACI;EACA;;AAIA;EACI;EACA;EACA;EACA;EACA;;AAEA;EACI;EACA;EACA;;AAIA;EACI;;AAEA;EACI;;AAEA;EACI;EACA;;AAMhB;EACI;EACA;EACA;EACA;EACA;;AAEA;EACI;EACA;EACA;EACA;EACA;EACA;;AAEA;EACI;EACA;EACA;;AAIA;EACI;EACA;EACA;;AAMhB;EACI;EACA;EACA;;AAEA;EACI;EACA;EACA;EACA;;AAIR;EACI;EACA;EACA;;AAEA;EACI;EACA;EACA;EACA;;AAKZ;EACI;EACA;;;AAKZ;EACI;;;AAGJ;EACI;IACI;;;AAIR;EACI;;;AAIJ;EACI;EACA%22%7D */
+/*# sourceMappingURL=data:application/json;charset=utf-8,%7B%22version%22:3,%22sourceRoot%22:%22%22,%22sources%22:%5B%22file:///C:/Users/jgage/Documents/GitHub/PorcelainAndAlabaster/PorcelainAndAlabaster/Sass/stylesheet.scss%22%5D,%22names%22:%5B%5D,%22mappings%22:%22AACA;EACI;EACA;EAoCA;;AAlCA;EACI;;AAGJ;EACI;EACA;EACA;;AAIA;EACI;;AAEA;EACI;EACA;EACA;EACA;EACA;;AAEA;EACI;EACA;EACA;;AAEA;EACI;;AASpB;EACI;EACA;;AAIA;EACI;EACA;EACA;EACA;EACA;;AAEA;EACI;EACA;EACA;;AAIA;EACI;;AAEA;EACI;;AAEA;EACI;EACA;;AAMhB;EACI;EACA;EACA;EACA;EACA;;AAEA;EACI;EACA;EACA;EACA;EACA;EACA;;AAEA;EACI;EACA;EACA;;AAIA;EACI;EACA;EACA;;AAMhB;EACI;EACA;EACA;;AAEA;EACI;EACA;EACA;EACA;;AAIR;EACI;EACA;EACA;;AAEA;EACI;EACA;EACA;EACA;;AAKZ;EACI;EACA;EACA;EACA;EACA;;AAGI;EACI;;AAEA;EACI;;AAEA;EACI;EACA;EACA;EACA;EACA;;AAGJ;EACI;EACA;EACA;EACA;;AAGJ;EACI;EACA;EACA;EACA;;AAGJ;EACI;EACA;EACA;EACA;;AAMhB;EACI;EACA;EACA;EACA;EACA;;AAEA;EACI;EACA;EACA;EACA;EACA;EACA;;AAEA;EACI;EACA;EACA;;AAIA;EACI;EACA;EACA;;AAMhB;EACI;EACA;EACA;;AAEA;EACI;EACA;EACA;EACA;;AAIR;EACI;EACA;EACA;;AAEA;EACI;EACA;EACA;EACA;;AAKZ;EACI;EACA;;;AAKZ;EACI;;;AAGJ;EACI;IACI;;;AAIR;EACI;;;AAIJ;EACI;EACA%22%7D */

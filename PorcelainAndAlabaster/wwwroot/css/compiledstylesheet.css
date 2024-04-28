@@ -14,17 +14,30 @@ body div.container {
 body header nav {
   display: inline-block;
 }
-body header nav ul {
+body header nav div > button.navbar-main-menu-toggler {
   z-index: 2;
   display: block;
   position: absolute;
-  top: 0;
-  left: 75vw;
+  top: 0px;
+  left: 97vw;
+  width: 3vw;
+  height: 5vh;
+}
+body header nav ul {
+  z-index: 3;
+  display: block;
+  position: absolute;
+  top: 5vh;
+  left: 90vw;
+  width: 10vw;
+  text-align: right;
 }
 body header nav ul li {
   display: block;
   clear: right;
   background-color: darkgray;
+  padding-right: 2vw;
+  padding-bottom: 1vh;
 }
 body header nav ul li a {
   color: white;
@@ -187,6 +200,32 @@ body div#event-carousel-container-editor div.right-carousel-arrow div {
   width: 50px;
   margin-top: 32.5vh;
 }
+body div#room-calendar ul {
+  list-style-type: none;
+}
+body div#room-calendar #month-list {
+  float: left;
+  font-weight: bolder;
+  text-align: center;
+  width: 77vw;
+}
+body div#room-calendar #date-list {
+  clear: left;
+  height: 30vh;
+  width: 77vw;
+}
+body div#room-calendar #date-list th {
+  border-bottom: 5px solid black;
+  height: 5vh;
+  text-align: center;
+  width: 7vw;
+}
+body div#room-calendar #date-list td {
+  border: 2px solid black;
+  height: 5vh;
+  text-align: center;
+  width: 7vw;
+}
 body div #ill-request-review {
   display: grid;
   grid-template-columns: 1fr, 1fr;
@@ -210,4 +249,4 @@ html {
   min-height: 100%;
 }
 
-/*# sourceMappingURL=data:application/json;charset=utf-8,%7B%22version%22:3,%22sourceRoot%22:%22%22,%22sources%22:%5B%22file:///C:/Users/jgage/Documents/GitHub/PorcelainAndAlabaster/PorcelainAndAlabaster/Sass/stylesheet.scss%22%5D,%22names%22:%5B%5D,%22mappings%22:%22AACA;EACI;EACA;EAoCA;;AAlCA;EACI;;AAGJ;EACI;EACA;EACA;;AAIA;EACI;;AAEA;EACI;EACA;EACA;EACA;EACA;;AAEA;EACI;EACA;EACA;;AAEA;EACI;;AASpB;EACI;EACA;;AAIA;EACI;EACA;EACA;EACA;EACA;;AAEA;EACI;EACA;EACA;;AAIA;EACI;;AAEA;EACI;;AAEA;EACI;EACA;;AAMhB;EACI;EACA;EACA;EACA;EACA;;AAEA;EACI;EACA;EACA;EACA;EACA;EACA;;AAEA;EACI;EACA;EACA;;AAIA;EACI;EACA;EACA;;AAMhB;EACI;EACA;EACA;;AAEA;EACI;EACA;EACA;EACA;;AAIR;EACI;EACA;EACA;;AAEA;EACI;EACA;EACA;EACA;;AAKZ;EACI;EACA;EACA;EACA;EACA;;AAGI;EACI;;AAEA;EACI;;AAEA;EACI;EACA;EACA;EACA;EACA;;AAGJ;EACI;EACA;EACA;EACA;;AAGJ;EACI;EACA;EACA;EACA;;AAGJ;EACI;EACA;EACA;EACA;;AAMhB;EACI;EACA;EACA;EACA;EACA;;AAEA;EACI;EACA;EACA;EACA;EACA;EACA;;AAEA;EACI;EACA;EACA;;AAIA;EACI;EACA;EACA;;AAMhB;EACI;EACA;EACA;;AAEA;EACI;EACA;EACA;EACA;;AAIR;EACI;EACA;EACA;;AAEA;EACI;EACA;EACA;EACA;;AAKZ;EACI;EACA;;;AAKZ;EACI;;;AAGJ;EACI;IACI;;;AAIR;EACI;;;AAIJ;EACI;EACA%22%7D */
+/*# sourceMappingURL=data:application/json;charset=utf-8,%7B%22version%22:3,%22sourceRoot%22:%22%22,%22sources%22:%5B%22file:///C:/Users/jgage/Documents/GitHub/PorcelainAndAlabaster/PorcelainAndAlabaster/Sass/stylesheet.scss%22%5D,%22names%22:%5B%5D,%22mappings%22:%22AACA;EACI;EACA;EAkDA;;AAhDA;EACI;;AAGJ;EACI;EACA;EACA;;AAIA;EACI;;AAEA;EACQ;EACA;EACA;EACA;EACA;EACA;EACA;;AAGR;EACI;EACA;EACA;EACA;EACA;EACA;EACA;;AAEA;EACI;EACA;EACA;EACA;EACA;;AAEA;EACI;;AASpB;EACI;EACA;;AAIA;EACI;EACA;EACA;EACA;EACA;;AAEA;EACI;EACA;EACA;;AAIA;EACI;;AAEA;EACI;;AAEA;EACI;EACA;;AAMhB;EACI;EACA;EACA;EACA;EACA;;AAEA;EACI;EACA;EACA;EACA;EACA;EACA;;AAEA;EACI;EACA;EACA;;AAIA;EACI;EACA;EACA;;AAMhB;EACI;EACA;EACA;;AAEA;EACI;EACA;EACA;EACA;;AAIR;EACI;EACA;EACA;;AAEA;EACI;EACA;EACA;EACA;;AAKZ;EACI;EACA;EACA;EACA;EACA;;AAGI;EACI;;AAEA;EACI;;AAEA;EACI;EACA;EACA;EACA;EACA;;AAGJ;EACI;EACA;EACA;EACA;;AAGJ;EACI;EACA;EACA;EACA;;AAGJ;EACI;EACA;EACA;EACA;;AAMhB;EACI;EACA;EACA;EACA;EACA;;AAEA;EACI;EACA;EACA;EACA;EACA;EACA;;AAEA;EACI;EACA;EACA;;AAIA;EACI;EACA;EACA;;AAMhB;EACI;EACA;EACA;;AAEA;EACI;EACA;EACA;EACA;;AAIR;EACI;EACA;EACA;;AAEA;EACI;EACA;EACA;EACA;;AAMR;EACI;;AAGJ;EACI;EACA;EACA;EACA;;AAGJ;EACI;EACA;EACA;;AAEA;EACI;EACA;EACA;EACA;;AAGJ;EACI;EACA;EACA;EACA;;AAKZ;EACI;EACA;;;AAKZ;EACI;;;AAGJ;EACI;IACI;;;AAIR;EACI;;;AAIJ;EACI;EACA%22%7D */

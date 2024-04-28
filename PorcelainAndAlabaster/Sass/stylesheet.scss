@@ -17,17 +17,31 @@ body {
         nav {
             display: inline-block;
 
+            div > button.navbar-main-menu-toggler {
+                    z-index: 2;
+                    display: block;
+                    position: absolute;
+                    top: 0px;
+                    left: 97vw;
+                    width: 3vw;
+                    height: 5vh;
+            }
+
             ul {
-                z-index: 2;
+                z-index: 3;
                 display: block;
                 position: absolute;
-                top: 0;
-                left: 75vw;
+                top: 5vh;
+                left: 90vw;
+                width: 10vw;
+                text-align: right;
 
                 li {
                     display: block;
                     clear: right;
                     background-color: darkgray;
+                    padding-right: 2vw;
+                    padding-bottom: 1vh;
 
                     a {
                         color: white;
@@ -43,7 +57,7 @@ body {
         display: grid;
         grid-template-columns: 1fr, 1fr;
     }
-    //Events Page
+    //Combined div css for all pages
     div {
         &#event-carousel-container {
             display: grid;
@@ -231,6 +245,39 @@ body {
                     height: 50px;
                     width: 50px;
                     margin-top: 32.5vh;
+                }
+            }
+        }
+
+        &#room-calendar {
+            ul {
+                list-style-type: none;
+            }
+
+            #month-list {
+                float: left;
+                font-weight: bolder;
+                text-align: center;
+                width: 77vw;
+            }
+
+            #date-list {
+                clear: left;
+                height: 30vh;
+                width: 77vw;
+
+                th {
+                    border-bottom: 5px solid black;
+                    height: 5vh;
+                    text-align: center;
+                    width: 7vw;
+                }
+
+                td {
+                    border: 2px solid black;
+                    height: 5vh;
+                    text-align: center;
+                    width: 7vw;
                 }
             }
         }

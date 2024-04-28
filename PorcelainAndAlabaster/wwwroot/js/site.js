@@ -26,8 +26,54 @@ function moveCarouselOne(moveForward) {
         }
     }
 }
+// Call for changing the calendar table in booking calendar
+function createCalendar(year, month, currentDate) {
+    var startDateOfMonth = (new Date(year, month)).getDate();
+    var calendarDate = 0 - currentDate;
+    var lastDayOfMonth = (new Date(year, month + 1, 0)).getDate();
+    // Handle the days that are not the start of the month
+    $('.first-week').children().each(function () {
+        if (calendarDate > 0) {
+            $(this).text(calendarDate.toString());
+        }
+        calendarDate++;
+    });
+    // Handle the rest
+    $('.second-week').children().each(function () {
+        if (calendarDate <= lastDayOfMonth) {
+            $(this).text(calendarDate.toString());
+        }
+        calendarDate++;
+    });
+    $('.third-week').children().each(function () {
+        if (calendarDate <= lastDayOfMonth) {
+            $(this).text(calendarDate.toString());
+        }
+        calendarDate++;
+    });
+    $('.fourth-week').children().each(function () {
+        if (calendarDate <= lastDayOfMonth) {
+            $(this).text(calendarDate.toString());
+        }
+        calendarDate++;
+    });
+    $('.fifth-week').children().each(function () {
+        if (calendarDate <= lastDayOfMonth) {
+            $(this).text(calendarDate.toString());
+        }
+        calendarDate++;
+    });
+}
+//Load the first calendar based on current date for booking calendar
+function initialCalendarLoad() {
+    var todaysDate = new Date();
+    createCalendar(todaysDate.getFullYear(), todaysDate.getMonth(), todaysDate.getDay());
+}
 $('.left-carousel-arrow > div').on('click', function (event) { moveCarouselOne(false); });
 $('.right-carousel-arrow > div').on('click', function (event) { moveCarouselOne(true); });
+window.onload = function () {
+    initialCalendarLoad();
+};
 function showMainMenu() {
     var mainMenu = $('.navbar-main-menu-toggler');
     if (mainMenu.hasClass('active')) {

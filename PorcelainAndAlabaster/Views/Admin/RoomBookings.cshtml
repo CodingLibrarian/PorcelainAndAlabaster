@@ -1,27 +1,32 @@
 ﻿@{
     ViewData["Title"] = "Room Bookings";
-    //Need to import room list and settings with a pull of the data (possibly) refresh fixing and current date
+    //Need to import room list and settings with a pull of the data (possibly) refresh fixing and current date\
+    var currentDate = DateTime.Now;
+    var currentMonth = currentDate.Month;
+    var is31Month = currentMonth == 1 || currentMonth == 3 || currentMonth == 5 || currentMonth == 7 || currentMonth == 8 || currentMonth == 10 || currentMonth == 12;
+    var isLeapYear = ((currentDate.Year - 2024) % 4) == 0;
+    var isFeb = currentDate.Month == 2;
 }
 <h1>Book a room</h1>
 <select id="room-select">
     
 </select>
-<div id="room-calendar" class="hidden">
+<div id="room-calendar">
     <ul id="month-list">
-        <li>January</li>
-        <li>February</li>
-        <li>March</li>
-        <li>April</li>
-        <li>May</li>
-        <li>June</li>
-        <li>July</li>
-        <li>August</li>
-        <li>September</li>
-        <li>October</li>
-        <li>November</li>
-        <li>December</li>
+        <li class="@Html.Raw(currentMonth == 1 ? "active" : "hidden")">January</li>
+        <li class="@Html.Raw(currentMonth == 2 ? "active" : "hidden")">February</li>
+        <li class="@Html.Raw(currentMonth == 3 ? "active" : "hidden")">March</li>
+        <li class="@Html.Raw(currentMonth == 4 ? "active" : "hidden")">April</li>
+        <li class="@Html.Raw(currentMonth == 5 ? "active" : "hidden")">May</li>
+        <li class="@Html.Raw(currentMonth == 6 ? "active" : "hidden")">June</li>
+        <li class="@Html.Raw(currentMonth == 7 ? "active" : "hidden")">July</li>
+        <li class="@Html.Raw(currentMonth == 8 ? "active" : "hidden")">August</li>
+        <li class="@Html.Raw(currentMonth == 9 ? "active" : "hidden")">September</li>
+        <li class="@Html.Raw(currentMonth == 10 ? "active" : "hidden")">October</li>
+        <li class="@Html.Raw(currentMonth == 11 ? "active" : "hidden")">November</li>
+        <li class="@Html.Raw(currentMonth == 12 ? "active" : "hidden")">December</li>
     </ul>
-    <div class="year-div">2024</div>
+    <div class="year-div">@Html.Raw(currentDate.Year)</div>
     <ul id="day-list">
         <li>Sunday</li>
         <li>Monday</li>
@@ -60,8 +65,8 @@
         <li>26</li>
         <li>27</li>
         <li>28</li>
-        <li>29</li>
-        <li>30</li>
-        <li>31</li>
+        <li class="@Html.Raw((isFeb && isLeapYear) || !isFeb ? "" : "hidden")">29</li>
+        <li class="@Html.Raw(!isFeb ? "" : "hidden")">30</li>
+        <li class="@Html.Raw(is31Month ? "" : "hidden")">31</li>
     </ul>
 </div>

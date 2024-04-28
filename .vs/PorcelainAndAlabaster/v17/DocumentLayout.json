@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\jgage\\Documents\\GitHub\\PorcelainAndAlabaster\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{5138178C-4D86-47F7-AA13-F5222CA3127F}|PorcelainAndAlabaster\\PorcelainAndAlabaster.csproj|c:\\users\\jgage\\documents\\github\\porcelainandalabaster\\porcelainandalabaster\\views\\admin\\roombookings.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5138178C-4D86-47F7-AA13-F5222CA3127F}|PorcelainAndAlabaster\\PorcelainAndAlabaster.csproj|solutionrelative:porcelainandalabaster\\views\\admin\\roombookings.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{5138178C-4D86-47F7-AA13-F5222CA3127F}|PorcelainAndAlabaster\\PorcelainAndAlabaster.csproj|c:\\users\\jgage\\documents\\github\\porcelainandalabaster\\porcelainandalabaster\\views\\admin\\eventseditor.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{5138178C-4D86-47F7-AA13-F5222CA3127F}|PorcelainAndAlabaster\\PorcelainAndAlabaster.csproj|solutionrelative:porcelainandalabaster\\views\\admin\\eventseditor.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -22,11 +26,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
+              "Title": "RoomBookings.cshtml",
+              "DocumentMoniker": "C:\\Users\\jgage\\Documents\\GitHub\\PorcelainAndAlabaster\\PorcelainAndAlabaster\\Views\\Admin\\RoomBookings.cshtml",
+              "RelativeDocumentMoniker": "PorcelainAndAlabaster\\Views\\Admin\\RoomBookings.cshtml",
+              "ToolTip": "C:\\Users\\jgage\\Documents\\GitHub\\PorcelainAndAlabaster\\PorcelainAndAlabaster\\Views\\Admin\\RoomBookings.cshtml",
+              "RelativeToolTip": "PorcelainAndAlabaster\\Views\\Admin\\RoomBookings.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAABTAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-28T11:57:41.432Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "stylesheet.scss",
               "DocumentMoniker": "C:\\Users\\jgage\\Documents\\GitHub\\PorcelainAndAlabaster\\PorcelainAndAlabaster\\Sass\\stylesheet.scss",
               "RelativeDocumentMoniker": "PorcelainAndAlabaster\\Sass\\stylesheet.scss",
@@ -34,12 +51,11 @@
               "RelativeToolTip": "PorcelainAndAlabaster\\Sass\\stylesheet.scss",
               "ViewState": "AQIAAJcAAAAAAAAAAAAkwK0AAAAoAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002663|",
-              "WhenOpened": "2024-04-07T19:07:03.318Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-07T19:07:03.318Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "EventsEditor.cshtml",
               "DocumentMoniker": "C:\\Users\\jgage\\Documents\\GitHub\\PorcelainAndAlabaster\\PorcelainAndAlabaster\\Views\\Admin\\EventsEditor.cshtml",
               "RelativeDocumentMoniker": "PorcelainAndAlabaster\\Views\\Admin\\EventsEditor.cshtml",
@@ -52,7 +68,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Cataloger.cshtml",
               "DocumentMoniker": "C:\\Users\\jgage\\Documents\\GitHub\\PorcelainAndAlabaster\\PorcelainAndAlabaster\\Views\\Admin\\Cataloger.cshtml",
               "RelativeDocumentMoniker": "PorcelainAndAlabaster\\Views\\Admin\\Cataloger.cshtml",
@@ -60,8 +76,7 @@
               "RelativeToolTip": "PorcelainAndAlabaster\\Views\\Admin\\Cataloger.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-07T19:01:52.538Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-07T19:01:52.538Z"
             }
           ]
         }

@@ -27,6 +27,7 @@ function moveCarouselOne(moveForward) {
     }
 }
 // Call for changing the calendar table in booking calendar
+// TODO: Clean this up make one call
 function createCalendar(year, month, currentDate) {
     var startDateOfMonth = (new Date(year, month)).getDate();
     var calendarDate = 0 - currentDate;
@@ -69,8 +70,26 @@ function initialCalendarLoad() {
     var todaysDate = new Date();
     createCalendar(todaysDate.getFullYear(), todaysDate.getMonth(), todaysDate.getDay());
 }
+//Load the calendar based on button click event
+function moveCalendarOneMonth(direction) {
+    var currentMonth = $('#month-list > li.active');
+    if ('previous') {
+        //Check for December
+        if (currentMonth.next('li') != null) {
+        }
+        else {
+        }
+    }
+    else {
+    }
+}
+// Set all the event listeners
+// Events page
 $('.left-carousel-arrow > div').on('click', function (event) { moveCarouselOne(false); });
 $('.right-carousel-arrow > div').on('click', function (event) { moveCarouselOne(true); });
+// Months page
+$('.left-month-arrow > div').on('click', function (event) { moveCalendarOneMonth('previous'); });
+$('.right-month-arrow > div').on('click', function (event) { moveCalendarOneMonth('next'); });
 window.onload = function () {
     initialCalendarLoad();
 };

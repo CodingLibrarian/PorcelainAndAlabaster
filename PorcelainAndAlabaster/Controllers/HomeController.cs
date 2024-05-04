@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using PorcelainAndAlabaster.Models;
 using System.Diagnostics;
+using System.Net.Mail;
 
 namespace PorcelainAndAlabaster.Controllers
 {
@@ -33,6 +34,21 @@ namespace PorcelainAndAlabaster.Controllers
         public IActionResult Contact()
         {
             return View();
+        }
+
+        public void ContactSubmit(object sender, EventArgs e)
+        {
+            // Set up email client
+            // Configure to the library settings
+            SmtpClient smtpClient = new SmtpClient("", 25);
+            smtpClient.Credentials = new System.Net.NetworkCredential("", "");
+            smtpClient.DeliveryMethod = SmtpDeliveryMethod.Network;
+            smtpClient.EnableSsl = true;
+            MailMessage message = new MailMessage();
+            // Set email address based on library
+            message.To.Add(new MailAddress(""));
+            message.From = new MailAddress("contactForm@library", "library name");
+            smtpClient.Send(message);
         }
         public IActionResult Events()
         {

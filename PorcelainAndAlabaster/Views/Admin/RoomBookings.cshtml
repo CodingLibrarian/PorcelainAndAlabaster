@@ -11,6 +11,9 @@
     <option>Test 2</option>
 </select>
 <div id="room-calendar">
+    <span class="left-month-arrow">
+        <div></div>
+    </span>
     <ul id="month-list">
         <li class="@Html.Raw(currentMonth == 1 ? "active" : "hidden")">January <span class="year-div">@Html.Raw(currentDate.Year)</span>
         </li>
@@ -26,7 +29,9 @@
         <li class="@Html.Raw(currentMonth == 11 ? "active" : "hidden")">November <span class="year-div">@Html.Raw(currentDate.Year)</span></li>
         <li class="@Html.Raw(currentMonth == 12 ? "active" : "hidden")">December <span class="year-div">@Html.Raw(currentDate.Year)</span></li>
     </ul>
-    
+    <span class="right-month-arrow">
+        <div></div>
+    </span>
     <table id="date-list">
         <tr>
             <th>Sunday</th>

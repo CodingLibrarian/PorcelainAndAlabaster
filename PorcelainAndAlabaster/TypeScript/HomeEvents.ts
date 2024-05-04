@@ -71,9 +71,32 @@ function initialCalendarLoad() {
     createCalendar(todaysDate.getFullYear(), todaysDate.getMonth(), todaysDate.getDay());
 }
 
+//Load the calendar based on button click event
+function moveCalendarOneMonth(direction: string) {
+    let currentMonth = $('#month-list > li.active');
+    if ('previous') {
+        //Check for December
+        if (currentMonth.next('li') != null) {
 
+        } else {
+
+        }
+    } else {
+
+    }
+
+}
+
+// Set all the event listeners
+// Events page
 $('.left-carousel-arrow > div').on('click', (event: JQuery.Event) => { moveCarouselOne(false) });
 $('.right-carousel-arrow > div').on('click', (event: JQuery.Event) => { moveCarouselOne(true) });
+// Months page
+$('.left-month-arrow > div').on('click', (event: JQuery.Event) => { moveCalendarOneMonth('previous') });
+$('.right-month-arrow > div').on('click', (event: JQuery.Event) => { moveCalendarOneMonth('next') });
+
+
+
 window.onload = function () {
     initialCalendarLoad();
 }

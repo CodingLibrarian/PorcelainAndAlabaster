@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PorcelainAndAlabaster")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cab76b17d565f1a51f09d658c46a18a876286126")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0da1c95d9bed573c0dc3ced638c9f005f35beff3")]
 [assembly: System.Reflection.AssemblyProductAttribute("PorcelainAndAlabaster")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PorcelainAndAlabaster")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -90,6 +90,12 @@ $('.right-carousel-arrow > div').on('click', function (event) { moveCarouselOne(
 // Months page
 $('.left-month-arrow > div').on('click', function (event) { moveCalendarOneMonth('previous'); });
 $('.right-month-arrow > div').on('click', function (event) { moveCalendarOneMonth('next'); });
+// Contact page
+$('#contact-us').on('submit', function (event) {
+    event.preventDefault();
+    var contact = { firstName: $('#contact-us-first-name-input').val(), lastName: $('#contact-us-last-name-input').val(), email: $('#contact-us-email-input').val(), question: $('#contact-us-question-textarea').val() };
+    $.post('/home/contactSubmit', contact);
+});
 window.onload = function () {
     initialCalendarLoad();
 };
@@ -107,4 +113,3 @@ function showMainMenu() {
     }
 }
 $('.navbar-main-menu-toggler').on('click', function (event) { showMainMenu(); });
-//# sourceMappingURL=site.js.map

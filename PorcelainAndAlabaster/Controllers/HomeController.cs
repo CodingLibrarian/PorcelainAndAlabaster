@@ -36,7 +36,7 @@ namespace PorcelainAndAlabaster.Controllers
             return View();
         }
 
-        public void ContactSubmit(object sender, EventArgs e)
+        public void ContactSubmit(Contact conatact, EventArgs e)
         {
             // Set up email client
             // Configure to the library settings
@@ -49,6 +49,7 @@ namespace PorcelainAndAlabaster.Controllers
             message.To.Add(new MailAddress(""));
             message.From = new MailAddress("contactForm@library", "library name");
             smtpClient.Send(message);
+
         }
         public IActionResult Events()
         {

@@ -36,7 +36,7 @@ namespace PorcelainAndAlabaster.Controllers
             return View();
         }
 
-        public void ContactSubmit(Contact conatact, EventArgs e)
+        public void ContactSubmit(Contact contact, EventArgs e)
         {
             // Set up email client
             // Configure to the library settings
@@ -46,8 +46,28 @@ namespace PorcelainAndAlabaster.Controllers
             smtpClient.EnableSsl = true;
             MailMessage message = new MailMessage();
             // Set email address based on library
-            message.To.Add(new MailAddress(""));
+            message.To.Add(new MailAddress("insertLibraryEmail@library", "Library"));
             message.From = new MailAddress("contactForm@library", "library name");
+            message.Subject = "Contact Request";
+            message.Body = $"First Name: {contact.FirstName} Last Name: {contact.LastName} Email: {contact.Email} Question: {contact.Question}";
+            smtpClient.Send(message);
+
+        }
+
+        public void ILLSubmit(ILLRequest iLLRequest, EventArgs e)
+        {
+            // Set up email client
+            // Configure to the library settings
+            SmtpClient smtpClient = new SmtpClient("", 25);
+            smtpClient.Credentials = new System.Net.NetworkCredential("", "");
+            smtpClient.DeliveryMethod = SmtpDeliveryMethod.Network;
+            smtpClient.EnableSsl = true;
+            MailMessage message = new MailMessage();
+            // Set email address based on library
+            message.To.Add(new MailAddress("insertLibraryEmail@library", "Library"));
+            message.From = new MailAddress("contactForm@library", "library name");
+            message.Subject = "ILL Request";
+            message.Body = $"First Name: {iLLRequest.FirstName} Last Name: {iLLRequest.LastName} Email: {iLLRequest.Email} Library Card Number: {iLLRequest.LibraryCardNumber} Title: {iLLRequest.Title} Author: {iLLRequest.Author} Journal: {iLLRequest.Journal} Volume: {iLLRequest.Volume}";
             smtpClient.Send(message);
 
         }

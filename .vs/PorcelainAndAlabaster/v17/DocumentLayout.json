@@ -1,54 +1,12 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\jgage\\Documents\\GitHub\\PorcelainAndAlabaster\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{5138178C-4D86-47F7-AA13-F5222CA3127F}|PorcelainAndAlabaster\\PorcelainAndAlabaster.csproj|c:\\users\\jgage\\documents\\github\\porcelainandalabaster\\porcelainandalabaster\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5138178C-4D86-47F7-AA13-F5222CA3127F}|PorcelainAndAlabaster\\PorcelainAndAlabaster.csproj|solutionrelative:porcelainandalabaster\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5138178C-4D86-47F7-AA13-F5222CA3127F}|PorcelainAndAlabaster\\PorcelainAndAlabaster.csproj|c:\\users\\jgage\\documents\\github\\porcelainandalabaster\\porcelainandalabaster\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{5138178C-4D86-47F7-AA13-F5222CA3127F}|PorcelainAndAlabaster\\PorcelainAndAlabaster.csproj|solutionrelative:porcelainandalabaster\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": [
-        {
-          "DockedWidth": 130,
-          "SelectedChildIndex": 1,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "site.js",
-              "DocumentMoniker": "C:\\Users\\jgage\\Documents\\GitHub\\PorcelainAndAlabaster\\PorcelainAndAlabaster\\wwwroot\\js\\site.js",
-              "RelativeDocumentMoniker": "PorcelainAndAlabaster\\wwwroot\\js\\site.js",
-              "ToolTip": "C:\\Users\\jgage\\Documents\\GitHub\\PorcelainAndAlabaster\\PorcelainAndAlabaster\\wwwroot\\js\\site.js",
-              "RelativeToolTip": "PorcelainAndAlabaster\\wwwroot\\js\\site.js",
-              "ViewState": "AQIAAFMAAAAAAAAAAAAAwGYAAAAoAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-05-26T17:42:32.599Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "C:\\Users\\jgage\\Documents\\GitHub\\PorcelainAndAlabaster\\PorcelainAndAlabaster\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "PorcelainAndAlabaster\\Controllers\\HomeController.cs",
-              "ToolTip": "C:\\Users\\jgage\\Documents\\GitHub\\PorcelainAndAlabaster\\PorcelainAndAlabaster\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "PorcelainAndAlabaster\\Controllers\\HomeController.cs",
-              "ViewState": "AQIAADQAAAAAAAAAAAAuwD4AAABDAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-26T19:04:54.908Z",
-              "EditorCaption": ""
-            }
-          ]
-        }
-      ]
+      "DocumentGroups": []
     }
   ]
 }

@@ -603,6 +603,22 @@
           "build/LibSassBuilder.targets": {}
         }
       },
+      "Lucene.Net/3.0.3": {
+        "type": "package",
+        "dependencies": {
+          "SharpZipLib": "0.86.0"
+        },
+        "compile": {
+          "lib/NET40/Lucene.Net.dll": {
+            "related": ".pdb;.XML"
+          }
+        },
+        "runtime": {
+          "lib/NET40/Lucene.Net.dll": {
+            "related": ".pdb;.XML"
+          }
+        }
+      },
       "Microsoft.AspNetCore.Razor.Language/6.0.11": {
         "type": "package",
         "compile": {
@@ -1748,6 +1764,15 @@
             "assetType": "native",
             "rid": "ubuntu.16.10-x64"
           }
+        }
+      },
+      "SharpZipLib/0.86.0": {
+        "type": "package",
+        "compile": {
+          "lib/20/ICSharpCode.SharpZipLib.dll": {}
+        },
+        "runtime": {
+          "lib/20/ICSharpCode.SharpZipLib.dll": {}
         }
       },
       "System.AppContext/4.3.0": {
@@ -3256,6 +3281,16 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XDocument.dll": {}
         }
+      },
+      "PorcelainAndAlabassterSQLCmdLine/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/PorcelainAndAlabassterSQLCmdLine.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/PorcelainAndAlabassterSQLCmdLine.dll": {}
+        }
       }
     }
   },
@@ -4034,6 +4069,23 @@
         "tool/runtimes/osx-x64/native/libsass.dylib",
         "tool/runtimes/win-x64/native/libsass.dll",
         "tool/runtimes/win-x86/native/libsass.dll"
+      ]
+    },
+    "Lucene.Net/3.0.3": {
+      "sha512": "A/70q4eDcuuafQeDB9eaiDP9FQG7X29T4VIYRphS7Wk8kAM9gNcfVqYyd0H8BJ1BTpA5C1ORm9RzFn4BiNavrw==",
+      "type": "package",
+      "path": "lucene.net/3.0.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/NET35/Lucene.Net.XML",
+        "lib/NET35/Lucene.Net.dll",
+        "lib/NET35/Lucene.Net.pdb",
+        "lib/NET40/Lucene.Net.XML",
+        "lib/NET40/Lucene.Net.dll",
+        "lib/NET40/Lucene.Net.pdb",
+        "lucene.net.3.0.3.nupkg.sha512",
+        "lucene.net.nuspec"
       ]
     },
     "Microsoft.AspNetCore.Razor.Language/6.0.11": {
@@ -6045,6 +6097,21 @@
         "runtime.ubuntu.16.10-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
         "runtime.ubuntu.16.10-x64.runtime.native.system.security.cryptography.openssl.nuspec",
         "runtimes/ubuntu.16.10-x64/native/System.Security.Cryptography.Native.OpenSsl.so"
+      ]
+    },
+    "SharpZipLib/0.86.0": {
+      "sha512": "5DbS1SlKLMi+WG00Cm0ueYf2oyXJrowETQk8nx96rmdjTuHsA3laPykGV7Sxi0R5Xxfx0Kh/EfacAZ1f6M7y/g==",
+      "type": "package",
+      "path": "sharpziplib/0.86.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/11/ICSharpCode.SharpZipLib.dll",
+        "lib/20/ICSharpCode.SharpZipLib.dll",
+        "lib/SL3/SharpZipLib.Silverlight3.dll",
+        "lib/SL4/SharpZipLib.Silverlight4.dll",
+        "sharpziplib.0.86.0.nupkg.sha512",
+        "sharpziplib.nuspec"
       ]
     },
     "System.AppContext/4.3.0": {
@@ -9828,13 +9895,20 @@
         "system.xml.xdocument.4.3.0.nupkg.sha512",
         "system.xml.xdocument.nuspec"
       ]
+    },
+    "PorcelainAndAlabassterSQLCmdLine/1.0.0": {
+      "type": "project",
+      "path": "../PorcelainAndAlabassterSQLCmdLine/PorcelainAndAlabassterSQLCmdLine.csproj",
+      "msbuildProject": "../PorcelainAndAlabassterSQLCmdLine/PorcelainAndAlabassterSQLCmdLine.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net7.0": [
       "LibSassBuilder >= 3.0.0",
+      "Lucene.Net >= 3.0.3",
       "Microsoft.TypeScript.MSBuild >= 5.2.2",
-      "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 7.0.11"
+      "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 7.0.11",
+      "PorcelainAndAlabassterSQLCmdLine >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -9869,7 +9943,11 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\jgage\\Documents\\GitHub\\PorcelainAndAlabaster\\PorcelainAndAlabassterSQLCmdLine\\PorcelainAndAlabassterSQLCmdLine.csproj": {
+              "projectPath": "C:\\Users\\jgage\\Documents\\GitHub\\PorcelainAndAlabaster\\PorcelainAndAlabassterSQLCmdLine\\PorcelainAndAlabassterSQLCmdLine.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -9890,6 +9968,10 @@
           "LibSassBuilder": {
             "target": "Package",
             "version": "[3.0.0, )"
+          },
+          "Lucene.Net": {
+            "target": "Package",
+            "version": "[3.0.3, )"
           },
           "Microsoft.TypeScript.MSBuild": {
             "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
@@ -9924,5 +10006,27 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202\\RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Lucene.Net 3.0.3' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net7.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Lucene.Net",
+      "targetGraphs": [
+        "net7.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'SharpZipLib 0.86.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net7.0'. This package may not be fully compatible with your project.",
+      "libraryId": "SharpZipLib",
+      "targetGraphs": [
+        "net7.0"
+      ]
+    }
+  ]
 }

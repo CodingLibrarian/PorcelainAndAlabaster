@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "0ERtC1kCgNjB27b89xLCIume7tt6sWCOhrua1T7gB4jPZtUsZ/9/nk38A2GCd30YROPZ19EbqutIm3mB+60pFg==",
+  "dgSpecHash": "UdHKHaPMDCGlh1n/sbQ4WQGPbiz0223mjX1Mh01JDJjL2DrdOyqsAjLKd3iLEXkqNeVoHdxp0Sf909cIG2Y3fA==",
   "success": true,
   "projectFilePath": "C:\\Users\\jgage\\Documents\\GitHub\\PorcelainAndAlabaster\\PorcelainAndAlabaster\\PorcelainAndAlabaster.csproj",
   "expectedPackageFiles": [
@@ -55,6 +55,7 @@
     "C:\\Users\\jgage\\.nuget\\packages\\humanizer.core.zh-hans\\2.14.1\\humanizer.core.zh-hans.2.14.1.nupkg.sha512",
     "C:\\Users\\jgage\\.nuget\\packages\\humanizer.core.zh-hant\\2.14.1\\humanizer.core.zh-hant.2.14.1.nupkg.sha512",
     "C:\\Users\\jgage\\.nuget\\packages\\libsassbuilder\\3.0.0\\libsassbuilder.3.0.0.nupkg.sha512",
+    "C:\\Users\\jgage\\.nuget\\packages\\lucene.net\\3.0.3\\lucene.net.3.0.3.nupkg.sha512",
     "C:\\Users\\jgage\\.nuget\\packages\\microsoft.aspnetcore.razor.language\\6.0.11\\microsoft.aspnetcore.razor.language.6.0.11.nupkg.sha512",
     "C:\\Users\\jgage\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\6.0.0\\microsoft.bcl.asyncinterfaces.6.0.0.nupkg.sha512",
     "C:\\Users\\jgage\\.nuget\\packages\\microsoft.build\\17.3.2\\microsoft.build.17.3.2.nupkg.sha512",
@@ -114,6 +115,7 @@
     "C:\\Users\\jgage\\.nuget\\packages\\runtime.ubuntu.14.04-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.ubuntu.14.04-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
     "C:\\Users\\jgage\\.nuget\\packages\\runtime.ubuntu.16.04-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.ubuntu.16.04-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
     "C:\\Users\\jgage\\.nuget\\packages\\runtime.ubuntu.16.10-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.ubuntu.16.10-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
+    "C:\\Users\\jgage\\.nuget\\packages\\sharpziplib\\0.86.0\\sharpziplib.0.86.0.nupkg.sha512",
     "C:\\Users\\jgage\\.nuget\\packages\\system.appcontext\\4.3.0\\system.appcontext.4.3.0.nupkg.sha512",
     "C:\\Users\\jgage\\.nuget\\packages\\system.buffers\\4.3.0\\system.buffers.4.3.0.nupkg.sha512",
     "C:\\Users\\jgage\\.nuget\\packages\\system.collections\\4.3.0\\system.collections.4.3.0.nupkg.sha512",
@@ -194,5 +196,26 @@
     "C:\\Users\\jgage\\.nuget\\packages\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512",
     "C:\\Users\\jgage\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Lucene.Net 3.0.3' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net7.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Lucene.Net",
+      "targetGraphs": [
+        "net7.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'SharpZipLib 0.86.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net7.0'. This package may not be fully compatible with your project.",
+      "libraryId": "SharpZipLib",
+      "targetGraphs": [
+        "net7.0"
+      ]
+    }
+  ]
 }

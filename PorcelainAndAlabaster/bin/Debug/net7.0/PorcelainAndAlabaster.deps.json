@@ -9,8 +9,10 @@
       "PorcelainAndAlabaster/1.0.0": {
         "dependencies": {
           "LibSassBuilder": "3.0.0",
+          "Lucene.Net": "3.0.3",
           "Microsoft.TypeScript.MSBuild": "5.2.2",
-          "Microsoft.VisualStudio.Web.CodeGeneration.Design": "7.0.11"
+          "Microsoft.VisualStudio.Web.CodeGeneration.Design": "7.0.11",
+          "PorcelainAndAlabassterSQLCmdLine": "1.0.0"
         },
         "runtime": {
           "PorcelainAndAlabaster.dll": {}
@@ -557,6 +559,17 @@
         }
       },
       "LibSassBuilder/3.0.0": {},
+      "Lucene.Net/3.0.3": {
+        "dependencies": {
+          "SharpZipLib": "0.86.0"
+        },
+        "runtime": {
+          "lib/NET40/Lucene.Net.dll": {
+            "assemblyVersion": "3.0.3.0",
+            "fileVersion": "3.0.3.0"
+          }
+        }
+      },
       "Microsoft.AspNetCore.Razor.Language/6.0.11": {
         "runtime": {
           "lib/netstandard2.0/Microsoft.AspNetCore.Razor.Language.dll": {
@@ -1390,6 +1403,14 @@
       "runtime.ubuntu.14.04-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {},
       "runtime.ubuntu.16.04-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {},
       "runtime.ubuntu.16.10-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {},
+      "SharpZipLib/0.86.0": {
+        "runtime": {
+          "lib/20/ICSharpCode.SharpZipLib.dll": {
+            "assemblyVersion": "0.86.0.518",
+            "fileVersion": "0.86.0.518"
+          }
+        }
+      },
       "System.AppContext/4.3.0": {
         "dependencies": {
           "System.Runtime": "4.3.0"
@@ -2130,6 +2151,11 @@
           "System.Threading": "4.3.0",
           "System.Xml.ReaderWriter": "4.3.0"
         }
+      },
+      "PorcelainAndAlabassterSQLCmdLine/1.0.0": {
+        "runtime": {
+          "PorcelainAndAlabassterSQLCmdLine.dll": {}
+        }
       }
     }
   },
@@ -2495,6 +2521,13 @@
       "sha512": "sha512-lbQw3xsZ9SxV4H3EN19QkXFueU6pnPMhqE0upSWnnMw1jhvlt7fkv0bCVVKn3gedFf2t4V4BKkWyJE4cz0AM5g==",
       "path": "libsassbuilder/3.0.0",
       "hashPath": "libsassbuilder.3.0.0.nupkg.sha512"
+    },
+    "Lucene.Net/3.0.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-A/70q4eDcuuafQeDB9eaiDP9FQG7X29T4VIYRphS7Wk8kAM9gNcfVqYyd0H8BJ1BTpA5C1ORm9RzFn4BiNavrw==",
+      "path": "lucene.net/3.0.3",
+      "hashPath": "lucene.net.3.0.3.nupkg.sha512"
     },
     "Microsoft.AspNetCore.Razor.Language/6.0.11": {
       "type": "package",
@@ -2908,6 +2941,13 @@
       "sha512": "sha512-VB5cn/7OzUfzdnC8tqAIMQciVLiq2epm2NrAm1E9OjNRyG4lVhfR61SMcLizejzQP8R8Uf/0l5qOIbUEi+RdEg==",
       "path": "runtime.ubuntu.16.10-x64.runtime.native.system.security.cryptography.openssl/4.3.0",
       "hashPath": "runtime.ubuntu.16.10-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512"
+    },
+    "SharpZipLib/0.86.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-5DbS1SlKLMi+WG00Cm0ueYf2oyXJrowETQk8nx96rmdjTuHsA3laPykGV7Sxi0R5Xxfx0Kh/EfacAZ1f6M7y/g==",
+      "path": "sharpziplib/0.86.0",
+      "hashPath": "sharpziplib.0.86.0.nupkg.sha512"
     },
     "System.AppContext/4.3.0": {
       "type": "package",
@@ -3461,6 +3501,11 @@
       "sha512": "sha512-5zJ0XDxAIg8iy+t4aMnQAu0MqVbqyvfoUVl1yDV61xdo3Vth45oA2FoY4pPkxYAH5f8ixpmTqXeEIya95x0aCQ==",
       "path": "system.xml.xdocument/4.3.0",
       "hashPath": "system.xml.xdocument.4.3.0.nupkg.sha512"
+    },
+    "PorcelainAndAlabassterSQLCmdLine/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     }
   }
 }

@@ -3,16 +3,44 @@
   "WorkspaceRootPath": "C:\\Users\\jgage\\Documents\\GitHub\\PorcelainAndAlabaster\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5138178C-4D86-47F7-AA13-F5222CA3127F}|PorcelainAndAlabaster\\PorcelainAndAlabaster.csproj|c:\\users\\jgage\\documents\\github\\porcelainandalabaster\\porcelainandalabaster\\controllers\\sharedcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5138178C-4D86-47F7-AA13-F5222CA3127F}|PorcelainAndAlabaster\\PorcelainAndAlabaster.csproj|solutionrelative:porcelainandalabaster\\controllers\\sharedcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5138178C-4D86-47F7-AA13-F5222CA3127F}|PorcelainAndAlabaster\\PorcelainAndAlabaster.csproj|c:\\users\\jgage\\documents\\github\\porcelainandalabaster\\porcelainandalabaster\\models\\patron.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5138178C-4D86-47F7-AA13-F5222CA3127F}|PorcelainAndAlabaster\\PorcelainAndAlabaster.csproj|solutionrelative:porcelainandalabaster\\models\\patron.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C7C12774-9A27-464A-B266-17A30DC8C19E}|PorcelainAndAlabassterSQLCmdLine\\PorcelainAndAlabassterSQLCmdLine.csproj|c:\\users\\jgage\\documents\\github\\porcelainandalabaster\\porcelainandalabasstersqlcmdline\\scripts\\update0000100.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}",
       "RelativeMoniker": "D:0:0:{C7C12774-9A27-464A-B266-17A30DC8C19E}|PorcelainAndAlabassterSQLCmdLine\\PorcelainAndAlabassterSQLCmdLine.csproj|solutionrelative:porcelainandalabasstersqlcmdline\\scripts\\update0000100.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{C7C12774-9A27-464A-B266-17A30DC8C19E}|PorcelainAndAlabassterSQLCmdLine\\PorcelainAndAlabassterSQLCmdLine.csproj|c:\\users\\jgage\\documents\\github\\porcelainandalabaster\\porcelainandalabasstersqlcmdline\\storedprocs\\insertusers.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}",
+      "RelativeMoniker": "D:0:0:{C7C12774-9A27-464A-B266-17A30DC8C19E}|PorcelainAndAlabassterSQLCmdLine\\PorcelainAndAlabassterSQLCmdLine.csproj|solutionrelative:porcelainandalabasstersqlcmdline\\storedprocs\\insertusers.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C7C12774-9A27-464A-B266-17A30DC8C19E}|PorcelainAndAlabassterSQLCmdLine\\PorcelainAndAlabassterSQLCmdLine.csproj|c:\\users\\jgage\\documents\\github\\porcelainandalabaster\\porcelainandalabasstersqlcmdline\\storedprocs\\insertpatrons.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}",
+      "RelativeMoniker": "D:0:0:{C7C12774-9A27-464A-B266-17A30DC8C19E}|PorcelainAndAlabassterSQLCmdLine\\PorcelainAndAlabassterSQLCmdLine.csproj|solutionrelative:porcelainandalabasstersqlcmdline\\storedprocs\\insertpatrons.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5138178C-4D86-47F7-AA13-F5222CA3127F}|PorcelainAndAlabaster\\PorcelainAndAlabaster.csproj|c:\\users\\jgage\\documents\\github\\porcelainandalabaster\\porcelainandalabaster\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5138178C-4D86-47F7-AA13-F5222CA3127F}|PorcelainAndAlabaster\\PorcelainAndAlabaster.csproj|solutionrelative:porcelainandalabaster\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5138178C-4D86-47F7-AA13-F5222CA3127F}|PorcelainAndAlabaster\\PorcelainAndAlabaster.csproj|c:\\users\\jgage\\documents\\github\\porcelainandalabaster\\porcelainandalabaster\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5138178C-4D86-47F7-AA13-F5222CA3127F}|PorcelainAndAlabaster\\PorcelainAndAlabaster.csproj|solutionrelative:porcelainandalabaster\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5138178C-4D86-47F7-AA13-F5222CA3127F}|PorcelainAndAlabaster\\PorcelainAndAlabaster.csproj|c:\\users\\jgage\\documents\\github\\porcelainandalabaster\\porcelainandalabaster\\controllers\\sharedcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5138178C-4D86-47F7-AA13-F5222CA3127F}|PorcelainAndAlabaster\\PorcelainAndAlabaster.csproj|solutionrelative:porcelainandalabaster\\controllers\\sharedcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{C7C12774-9A27-464A-B266-17A30DC8C19E}|PorcelainAndAlabassterSQLCmdLine\\PorcelainAndAlabassterSQLCmdLine.csproj|c:\\users\\jgage\\documents\\github\\porcelainandalabaster\\porcelainandalabasstersqlcmdline\\scripts\\update0000100.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame",
       "RelativeMoniker": "D:0:0:{C7C12774-9A27-464A-B266-17A30DC8C19E}|PorcelainAndAlabassterSQLCmdLine\\PorcelainAndAlabassterSQLCmdLine.csproj|solutionrelative:porcelainandalabasstersqlcmdline\\scripts\\update0000100.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C7C12774-9A27-464A-B266-17A30DC8C19E}|PorcelainAndAlabassterSQLCmdLine\\PorcelainAndAlabassterSQLCmdLine.csproj|c:\\users\\jgage\\documents\\github\\porcelainandalabaster\\porcelainandalabasstersqlcmdline\\storedprocs\\insertpatrons.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame",
+      "RelativeMoniker": "D:0:0:{C7C12774-9A27-464A-B266-17A30DC8C19E}|PorcelainAndAlabassterSQLCmdLine\\PorcelainAndAlabassterSQLCmdLine.csproj|solutionrelative:porcelainandalabasstersqlcmdline\\storedprocs\\insertpatrons.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C7C12774-9A27-464A-B266-17A30DC8C19E}|PorcelainAndAlabassterSQLCmdLine\\PorcelainAndAlabassterSQLCmdLine.csproj|c:\\users\\jgage\\documents\\github\\porcelainandalabaster\\porcelainandalabasstersqlcmdline\\storedprocs\\insertusers.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame",
+      "RelativeMoniker": "D:0:0:{C7C12774-9A27-464A-B266-17A30DC8C19E}|PorcelainAndAlabassterSQLCmdLine\\PorcelainAndAlabassterSQLCmdLine.csproj|solutionrelative:porcelainandalabasstersqlcmdline\\storedprocs\\insertusers.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,19 +50,56 @@
       "DocumentGroups": [
         {
           "DockedWidth": 130,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "SharedController.cs",
-              "DocumentMoniker": "C:\\Users\\jgage\\Documents\\GitHub\\PorcelainAndAlabaster\\PorcelainAndAlabaster\\Controllers\\SharedController.cs",
-              "RelativeDocumentMoniker": "PorcelainAndAlabaster\\Controllers\\SharedController.cs",
-              "ToolTip": "C:\\Users\\jgage\\Documents\\GitHub\\PorcelainAndAlabaster\\PorcelainAndAlabaster\\Controllers\\SharedController.cs",
-              "RelativeToolTip": "PorcelainAndAlabaster\\Controllers\\SharedController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAA0AAAA",
+              "DocumentIndex": 2,
+              "Title": "InsertUsers.sql ",
+              "DocumentMoniker": "C:\\Users\\jgage\\Documents\\GitHub\\PorcelainAndAlabaster\\PorcelainAndAlabassterSQLCmdLine\\StoredProcs\\InsertUsers.sql",
+              "RelativeDocumentMoniker": "PorcelainAndAlabassterSQLCmdLine\\StoredProcs\\InsertUsers.sql",
+              "ToolTip": "C:\\Users\\jgage\\Documents\\GitHub\\PorcelainAndAlabaster\\PorcelainAndAlabassterSQLCmdLine\\StoredProcs\\InsertUsers.sql",
+              "RelativeToolTip": "PorcelainAndAlabassterSQLCmdLine\\StoredProcs\\InsertUsers.sql",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2024-06-01T17:13:54.878Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\jgage\\Documents\\GitHub\\PorcelainAndAlabaster\\PorcelainAndAlabaster\\Models\\User.cs",
+              "RelativeDocumentMoniker": "PorcelainAndAlabaster\\Models\\User.cs",
+              "ToolTip": "C:\\Users\\jgage\\Documents\\GitHub\\PorcelainAndAlabaster\\PorcelainAndAlabaster\\Models\\User.cs",
+              "RelativeToolTip": "PorcelainAndAlabaster\\Models\\User.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAgAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-28T13:18:39.333Z",
+              "WhenOpened": "2024-06-01T17:10:15.317Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "InsertPatrons.sql ",
+              "DocumentMoniker": "C:\\Users\\jgage\\Documents\\GitHub\\PorcelainAndAlabaster\\PorcelainAndAlabassterSQLCmdLine\\StoredProcs\\InsertPatrons.sql",
+              "RelativeDocumentMoniker": "PorcelainAndAlabassterSQLCmdLine\\StoredProcs\\InsertPatrons.sql",
+              "ToolTip": "C:\\Users\\jgage\\Documents\\GitHub\\PorcelainAndAlabaster\\PorcelainAndAlabassterSQLCmdLine\\StoredProcs\\InsertPatrons.sql",
+              "RelativeToolTip": "PorcelainAndAlabassterSQLCmdLine\\StoredProcs\\InsertPatrons.sql",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2024-06-01T17:03:54.98Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Patron.cs",
+              "DocumentMoniker": "C:\\Users\\jgage\\Documents\\GitHub\\PorcelainAndAlabaster\\PorcelainAndAlabaster\\Models\\Patron.cs",
+              "RelativeDocumentMoniker": "PorcelainAndAlabaster\\Models\\Patron.cs",
+              "ToolTip": "C:\\Users\\jgage\\Documents\\GitHub\\PorcelainAndAlabaster\\PorcelainAndAlabaster\\Models\\Patron.cs",
+              "RelativeToolTip": "PorcelainAndAlabaster\\Models\\Patron.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAAUwCAAAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-01T15:45:55.551Z",
               "EditorCaption": ""
             },
             {
@@ -47,6 +112,32 @@
               "RelativeToolTip": "PorcelainAndAlabassterSQLCmdLine\\Scripts\\Update0000100.sql",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
               "WhenOpened": "2024-05-28T12:54:08.097Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AdminController.cs",
+              "DocumentMoniker": "C:\\Users\\jgage\\Documents\\GitHub\\PorcelainAndAlabaster\\PorcelainAndAlabaster\\Controllers\\AdminController.cs",
+              "RelativeDocumentMoniker": "PorcelainAndAlabaster\\Controllers\\AdminController.cs",
+              "ToolTip": "C:\\Users\\jgage\\Documents\\GitHub\\PorcelainAndAlabaster\\PorcelainAndAlabaster\\Controllers\\AdminController.cs",
+              "RelativeToolTip": "PorcelainAndAlabaster\\Controllers\\AdminController.cs",
+              "ViewState": "AQIAABQAAAAAAAAAAAAswIIAAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-01T15:42:50.675Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "SharedController.cs",
+              "DocumentMoniker": "C:\\Users\\jgage\\Documents\\GitHub\\PorcelainAndAlabaster\\PorcelainAndAlabaster\\Controllers\\SharedController.cs",
+              "RelativeDocumentMoniker": "PorcelainAndAlabaster\\Controllers\\SharedController.cs",
+              "ToolTip": "C:\\Users\\jgage\\Documents\\GitHub\\PorcelainAndAlabaster\\PorcelainAndAlabaster\\Controllers\\SharedController.cs",
+              "RelativeToolTip": "PorcelainAndAlabaster\\Controllers\\SharedController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-28T13:18:39.333Z",
               "EditorCaption": ""
             }
           ]

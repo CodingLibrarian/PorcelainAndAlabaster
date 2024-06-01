@@ -72,4 +72,8 @@
 		cellPhone varchar(25),
 		settings varchar(max)
 	)
+	CREATE TYPE dbo.UserType AS TABLE  
+	(  
+		username varchar(100)
+	)
 COMMIT TRANSACTION

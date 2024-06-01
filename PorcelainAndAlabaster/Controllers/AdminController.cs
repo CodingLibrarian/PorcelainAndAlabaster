@@ -62,13 +62,13 @@ namespace PorcelainAndAlabaster.Controllers
             return View();
         }
 
-        public void InsertUsers(Patron[] patrons)
+        public void InsertPatrons(Patron[] patrons)
             {
                 using (SqlConnection connection = new SqlConnection("YourConnectionString"))
                 {
                     connection.Open();
 
-                    using (SqlCommand command = new SqlCommand("InsertUsers", connection))
+                    using (SqlCommand command = new SqlCommand("InsertPatrons", connection))
                     {
                         command.CommandType = CommandType.StoredProcedure;
 
@@ -96,6 +96,39 @@ namespace PorcelainAndAlabaster.Controllers
             foreach (Patron patron in patrons)
             {
                 table.Rows.Add(patron.FirstName, patron.MiddleName, patron.LastName, patron.PrimaryMailingAddress, patron.SecondaryMailingAddress, patron.EmailAddress, patron.HomePhoneNumber, patron.MobilePhoneNumber);
+            }
+
+            return table;
+        }
+
+        public void InsertUsers(Patron[] patrons)
+        {
+            using (SqlConnection connection = new SqlConnection("YourConnectionString"))
+            {
+                connection.Open();
+
+                using (SqlCommand command = new SqlCommand("InsertUsers", connection))
+                {
+                    command.CommandType = CommandType.StoredProcedure;
+
+                    SqlParameter parameter = command.Parameters.AddWithValue("@users", CreatePatronDataTable(patrons));
+                    parameter.SqlDbType = SqlDbType.Structured;
+                    parameter.TypeName = "dbo.UserType";
+
+                    command.ExecuteNonQuery();
+                }
+            }
+        }
+
+        private DataTable CreateUserDataTable(User[] users)
+        {
+            DataTable table = new DataTable();
+            table.Columns.Add("name", typeof(string));
+            table.Columns.Add("email", typeof(string));
+
+            foreach (User user in users)
+            {
+                table.Rows.Add(user.FirstName, user.MiddleName);
             }
 
             return table;

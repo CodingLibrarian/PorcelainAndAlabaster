@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PorcelainAndAlabassterSQLCmdLine")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+233b0198b9b7a3e8552e61cc8206afe09ec42e96")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+930f9c3fdae5c8133ec95149d14048fcd349223c")]
 [assembly: System.Reflection.AssemblyProductAttribute("PorcelainAndAlabassterSQLCmdLine")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PorcelainAndAlabassterSQLCmdLine")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

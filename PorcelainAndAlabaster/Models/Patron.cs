@@ -4,21 +4,21 @@ namespace PorcelainAndAlabaster.Models
 {
     public class Patron
     {
-        protected string? FirstName { get; set; }
-        protected string? MiddleName { get; set; }
-        protected string? LastName { get; set; }
-        protected string? PrimaryMailingAddress { get; set; }
-        protected string? SecondaryMailingAddress { get; set; }
-        protected string? EmailAddress { get; set;}
-        protected string? HomePhoneNumber { get; set; }
-        protected string? MobilePhoneNumber { get; set; }
-        protected string? AccessCode { get; set; }
-        protected int? PatronId { get; set; }
-        protected DateTime? LastModified { get; set; }
-        protected DateTime? Created { get; set; }
-        protected bool? IsDeleted { get; set; }
+        public string? FirstName { get; set; }
+        public string? MiddleName { get; set; }
+        public string? LastName { get; set; }
+        public string? PrimaryMailingAddress { get; set; }
+        public string? SecondaryMailingAddress { get; set; }
+        public string? EmailAddress { get; set;}
+        public string? HomePhoneNumber { get; set; }
+        public string? MobilePhoneNumber { get; set; }
+        public string? AccessCode { get; set; }
+        public int? PatronId { get; set; }
+        public DateTime? LastModified { get; set; }
+        public DateTime? Created { get; set; }
+        public bool? IsDeleted { get; set; }
         // Make this an enum
-        protected string? status { get; set; }
+        public string? status { get; set; }
 
         public Patron() { }
 

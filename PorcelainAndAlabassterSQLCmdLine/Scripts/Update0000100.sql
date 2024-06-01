@@ -59,4 +59,17 @@
 		patronId int NOT NULL,
 		fineStatus VARCHAR(255)
 	)
+	CREATE TYPE dbo.PatronType AS TABLE  
+	(  
+		firstName varchar(100),
+		middleName varchar(100),
+		lastName varchar(100),
+		passwd varchar(100),
+		address1 varchar(250),
+		address2 varchar(250),
+		email varchar(250),
+		homePhone varchar(25),
+		cellPhone varchar(25),
+		settings varchar(max)
+	)
 COMMIT TRANSACTION

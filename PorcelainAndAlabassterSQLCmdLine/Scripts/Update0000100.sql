@@ -26,7 +26,8 @@
 		id INT PRIMARY KEY,
 		userName VARCHAR(100) NOT NULL,
 		passwd VARCHAR(100) NOT NULL,
-		settings VARCHAR(MAX)
+		settings VARCHAR(MAX),
+		patronId INT FOREIGN KEY
 	)
 	CREATE TABLE Patrons(
 		id INT PRIMARY KEY,

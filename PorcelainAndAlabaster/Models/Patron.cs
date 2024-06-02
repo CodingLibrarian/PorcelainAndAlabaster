@@ -18,11 +18,12 @@ namespace PorcelainAndAlabaster.Models
         public DateTime? Created { get; set; }
         public bool? IsDeleted { get; set; }
         // Make this an enum
-        public string? status { get; set; }
+        public string? Status { get; set; }
+        public string? Settings { get; set; }
 
         public Patron() { }
 
-        public Patron(string? firstName, string? middleName, string? lastName, string? primaryMailingAddress, string? secondaryMailingAddress, string? emailAddress, string? homePhoneNumber, string? mobilePhoneNumber, string? accessCode, int? patronId, DateTime? lastModified, DateTime? created, bool? isDeleted, string? status)
+        public Patron(string? firstName, string? middleName, string? lastName, string? primaryMailingAddress, string? secondaryMailingAddress, string? emailAddress, string? homePhoneNumber, string? mobilePhoneNumber, string? accessCode, int? patronId, DateTime? lastModified, DateTime? created, bool? isDeleted, string? status, string? settings)
         {
             FirstName = firstName;
             MiddleName = middleName;
@@ -37,7 +38,8 @@ namespace PorcelainAndAlabaster.Models
             LastModified = lastModified;
             Created = created;
             IsDeleted = isDeleted;
-            this.status = status;
+            this.Status = status;
+            this.Settings = settings;
         }
     }
 

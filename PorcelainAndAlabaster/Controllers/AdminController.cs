@@ -135,8 +135,8 @@ namespace PorcelainAndAlabaster.Controllers
 
             return table;
         }
-
-        public List<User> GetUserbyID(int userID)
+        // TODO: Need to make the Get Users from DB permission based and build security around the patron one
+        private List<User> GetUserbyID(int userID)
         {
             var userList = new List<User>();
             using (SqlConnection connection = new SqlConnection("YourConnectionString"))
@@ -172,6 +172,77 @@ namespace PorcelainAndAlabaster.Controllers
                 connection.Close();
             }
             return userList;
+        }
+
+        private List<Patron> GetPatronbyID(int patronID)
+        {
+            var patronList = new List<Patron>();
+            using (SqlConnection connection = new SqlConnection("YourConnectionString"))
+            {
+                connection.Open();
+
+                using (SqlCommand command = new SqlCommand("GetPatronByID", connection))
+                {
+                    command.CommandType = CommandType.StoredProcedure;
+
+                    SqlParameter parameter = command.Parameters.AddWithValue("@patronID", patronID);
+
+                    using (SqlDataReader reader = command.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            var obj = new Patron();
+                            obj.FirstName = reader.GetString(reader.GetOrdinal("firstName"));
+                            obj.MiddleName = reader.GetString(reader.GetOrdinal("middleName"));
+                            obj.LastName = reader.GetString(reader.GetOrdinal("lastName"));
+                            obj.EmailAddress = reader.GetString(reader.GetOrdinal("email"));
+                            obj.PrimaryMailingAddress = reader.GetString(reader.GetOrdinal("address1"));
+                            obj.SecondaryMailingAddress = reader.GetString(reader.GetOrdinal("address2"));
+                            obj.HomePhoneNumber = reader.GetString(reader.GetOrdinal("homePhone"));
+                            obj.MobilePhoneNumber = reader.GetString(reader.GetOrdinal("cellPhone"));
+                            obj.Settings = reader.GetString(reader.GetOrdinal("settings"));
+                            patronList.Add(obj);
+                        }
+                    }
+                }
+                connection.Close();
+            }
+            return patronList;
+        }
+        private List<BibRecord> GetBibRecordbyID(int bibRecordID)
+        {
+            var bibList = new List<BibRecord>();
+            using (SqlConnection connection = new SqlConnection("YourConnectionString"))
+            {
+                connection.Open();
+
+                using (SqlCommand command = new SqlCommand("GetBibRecordByID", connection))
+                {
+                    command.CommandType = CommandType.StoredProcedure;
+
+                    SqlParameter parameter = command.Parameters.AddWithValue("@bibRecordID", bibRecordID);
+
+                    using (SqlDataReader reader = command.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            var obj = new BibRecord();
+                            obj.Id = reader.GetInt32(reader.GetOrdinal("id"));
+                            obj.Title = reader.GetString(reader.GetOrdinal("title"));
+                            obj.Author = reader.GetString(reader.GetOrdinal("author"));
+                            obj.Publisher = reader.GetString(reader.GetOrdinal("publisher"));
+                            obj.PublisherLocation = reader.GetString(reader.GetOrdinal("publisherLocation"));
+                            obj.Created = reader.GetDateTime(reader.GetOrdinal("created"));
+                            obj.LastUpdated = reader.GetDateTime(reader.GetOrdinal("lastUpdate"));
+                            obj.IsDeleted = reader.GetBoolean(reader.GetOrdinal("isDeleted"));
+                            obj.MARCRecord = reader.GetString(reader.GetOrdinal("marcRecord"));
+                            bibList.Add(obj);
+                        }
+                    }
+                }
+                connection.Close();
+            }
+            return bibList;
         }
     }
 }

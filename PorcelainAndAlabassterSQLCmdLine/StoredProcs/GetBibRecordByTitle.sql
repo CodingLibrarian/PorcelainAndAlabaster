@@ -5,9 +5,9 @@ GO
 -- =============================================
 -- Author:		John Gage
 -- Create date: 06/02/24
--- Description:	Get BibRecord by BibRecordID
+-- Description:	Get BibRecord by Title
 -- =============================================
-CREATE OR ALTER PROCEDURE [dbo].[GetBibRecordByID] (@bibRecordID int)
+CREATE OR ALTER PROCEDURE [dbo].[GetBibRecordByTitle] (@bibTitle varchar(max))
 AS  
 BEGIN  
     SELECT
@@ -22,5 +22,5 @@ BEGIN
 		B.items,
 		B.marcRecord
 	FROM BibRecords as B
-	WHERE B.id = @bibRecordID
+	WHERE B.title LIKE '%' + @bibTitle + '%'
 END

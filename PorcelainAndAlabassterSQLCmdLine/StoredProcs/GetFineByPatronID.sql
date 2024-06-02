@@ -7,7 +7,7 @@ GO
 -- Create date: 06/02/24
 -- Description:	Get Fines by PatronID
 -- =============================================
-CREATE OR ALTER   PROCEDURE [dbo].[GetFinesByPatronID] (@PatronID int)
+CREATE OR ALTER PROCEDURE [dbo].[GetFinesByPatronID] (@PatronID int)
 AS  
 BEGIN  
     SELECT

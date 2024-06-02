@@ -21,8 +21,7 @@ BEGIN
 		P.address1,
 		P.address2,
 		P.homePhone,
-		P.cellPhone,
-		P.settings
+		P.cellPhone
 	FROM Users as U
 	LEFT JOIN Patrons as P
 	ON P.id = U.patronId

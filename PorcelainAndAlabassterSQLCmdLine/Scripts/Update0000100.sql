@@ -22,13 +22,6 @@
 		bibRecordId INT,
 		holdId INT
 	)
-	CREATE TABLE Users(
-		id INT PRIMARY KEY,
-		userName VARCHAR(100) NOT NULL,
-		passwd VARCHAR(100) NOT NULL,
-		settings VARCHAR(MAX),
-		patronId INT FOREIGN KEY
-	)
 	CREATE TABLE Patrons(
 		id INT PRIMARY KEY,
 		firstName VARCHAR(100) NOT NULL,
@@ -41,6 +34,13 @@
 		homePhone VARCHAR(25),
 		cellPhone VARCHAR(25),
 		settings VARCHAR(MAX)
+	)
+	CREATE TABLE Users(
+		id INT PRIMARY KEY,
+		userName VARCHAR(100) NOT NULL,
+		passwd VARCHAR(100) NOT NULL,
+		settings VARCHAR(MAX),
+		patronId INT FOREIGN KEY REFERENCES Patrons(id)
 	)
 	CREATE TABLE Circulation(
 		id INT PRIMARY KEY,
@@ -76,5 +76,30 @@
 	CREATE TYPE dbo.UserType AS TABLE  
 	(  
 		username varchar(100)
+	)
+	CREATE TYPE dbo.BibRecordType AS TABLE  
+	(  
+		id int,
+		title varchar(max),
+		author varchar(max),
+		publisher varchar(max),
+		publisherLocation varchar(max),
+		publicationYear int,
+		created date,
+		lastUpdate date,
+		isDeleted bit,
+		items varchar(max),
+		marcRecord varchar(max)
+	)
+	CREATE TYPE dbo.ItemRecordType AS TABLE  
+	(  
+		id int,
+		barcode varchar(max),
+		dueDate varchar(max),
+		itemType varchar(max),
+		circulationStatsIds varchar(max),
+		patronId varchar(max),
+		bibrecordId int,
+		holdId int
 	)
 COMMIT TRANSACTION

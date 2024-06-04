@@ -102,7 +102,7 @@ namespace PorcelainAndAlabaster.Controllers
             return table;
         }
 
-        public void InsertUsers(Patron[] patrons)
+        public void InsertUsers(User[] users)
         {
             using (SqlConnection connection = new SqlConnection("YourConnectionString"))
             {
@@ -112,7 +112,7 @@ namespace PorcelainAndAlabaster.Controllers
                 {
                     command.CommandType = CommandType.StoredProcedure;
 
-                    SqlParameter parameter = command.Parameters.AddWithValue("@users", CreatePatronDataTable(patrons));
+                    SqlParameter parameter = command.Parameters.AddWithValue("@users", CreateUserDataTable(users));
                     parameter.SqlDbType = SqlDbType.Structured;
                     parameter.TypeName = "dbo.UserType";
 
@@ -135,6 +135,88 @@ namespace PorcelainAndAlabaster.Controllers
 
             return table;
         }
+
+        public void InsertBibRecords(BibRecord[] bibRecords)
+        {
+            using (SqlConnection connection = new SqlConnection("YourConnectionString"))
+            {
+                connection.Open();
+
+                using (SqlCommand command = new SqlCommand("InsertBibRecords", connection))
+                {
+                    command.CommandType = CommandType.StoredProcedure;
+
+                    SqlParameter parameter = command.Parameters.AddWithValue("@bibRecords", CreateBibRecordDataTable(bibRecords));
+                    parameter.SqlDbType = SqlDbType.Structured;
+                    parameter.TypeName = "dbo.BibRecordType";
+
+                    command.ExecuteNonQuery();
+                }
+                connection.Close();
+            }
+        }
+
+        private DataTable CreateBibRecordDataTable(BibRecord[] bibRecords)
+        {
+            DataTable table = new DataTable();
+            table.Columns.Add("title", typeof(string));
+            table.Columns.Add("author", typeof(string));
+            table.Columns.Add("publisher", typeof(string));
+            table.Columns.Add("publisherLocation", typeof(string));
+            table.Columns.Add("publicationYear", typeof(int));
+            table.Columns.Add("created", typeof(DateTime));
+            table.Columns.Add("lastUpdated", typeof(DateTime));
+            table.Columns.Add("isDeleted", typeof(bool));
+            table.Columns.Add("items", typeof(string));
+            table.Columns.Add("marcRecord", typeof(string));
+
+            foreach (BibRecord bibRecord in bibRecords)
+            {
+                table.Rows.Add(bibRecord.Title, bibRecord.Author, bibRecord.Publisher, bibRecord.PublisherLocation, bibRecord.PublicationYear, bibRecord.Created, bibRecord.LastUpdated, bibRecord.IsDeleted, bibRecord.Items, bibRecord.MARCRecord);
+            }
+
+            return table;
+        }
+
+        public void InsertItemRecords(ItemRecord[] itemRecords)
+        {
+            using (SqlConnection connection = new SqlConnection("YourConnectionString"))
+            {
+                connection.Open();
+
+                using (SqlCommand command = new SqlCommand("InsertItemRecords", connection))
+                {
+                    command.CommandType = CommandType.StoredProcedure;
+
+                    SqlParameter parameter = command.Parameters.AddWithValue("@itemRecords", CreateItemRecordDataTable(itemRecords));
+                    parameter.SqlDbType = SqlDbType.Structured;
+                    parameter.TypeName = "dbo.ItemRecordType";
+
+                    command.ExecuteNonQuery();
+                }
+                connection.Close();
+            }
+        }
+
+        private DataTable CreateItemRecordDataTable(ItemRecord[] itemRecords)
+        {
+            DataTable table = new DataTable();
+            table.Columns.Add("barcode", typeof(int));
+            table.Columns.Add("dueDate", typeof(DateTime));
+            table.Columns.Add("itemType", typeof(string));
+            table.Columns.Add("circulationStatsIds", typeof(string));
+            table.Columns.Add("patronId", typeof(int));
+            table.Columns.Add("bibRecordId", typeof(int));
+            table.Columns.Add("holdId", typeof(int));
+
+            foreach (ItemRecord itemRecord in itemRecords)
+            {
+                table.Rows.Add(itemRecord.Barcode, itemRecord.DueDate, itemRecord.ItemType, itemRecord.CirculationStatsIds, itemRecord.PatronId, itemRecord.BibRecordId, itemRecord.HoldId);
+            }
+
+            return table;
+        }
+
         // TODO: Need to make the Get Users from DB permission based and build security around the patron one
         private List<User> GetUserbyID(int userID)
         {

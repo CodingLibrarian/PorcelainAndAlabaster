@@ -2,15 +2,15 @@
 {
     public class ItemRecord
     {
-        protected int ItemId { get; set; }
-        protected string? Barcode { get; set; }
-        protected DateTime? DueDate { get; set; }
+        public int ItemId { get; set; }
+        public string? Barcode { get; set; }
+        public DateTime? DueDate { get; set; }
         // Enum This
-        protected string? ItemType { get; set; }
-        protected int[]? CirculationStatsIds { get; set; }
-        protected int? PatronId{  get; set; }
-        protected int? BibRecordId { get; set; }
-        protected int? HoldId { get; set; }
+        public string? ItemType { get; set; }
+        public int[]? CirculationStatsIds { get; set; }
+        public int? PatronId{  get; set; }
+        public int? BibRecordId { get; set; }
+        public int? HoldId { get; set; }
         public ItemRecord() { }
         public ItemRecord(int itemId, string? barcode, DateTime? dueDate, string? type, int[]? circulationStatsIds, int? patronId, int? bibRecordId, int? holdId)
         {

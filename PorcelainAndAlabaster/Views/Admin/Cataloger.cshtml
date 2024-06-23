@@ -1,6 +1,8 @@
 ﻿
 @{
     //TODO: Get the bib records loaded into this
+    //TODO: Get notes module built
+    //TODO: Get location selection built
     ViewData["Title"] = "Cataloger";
 }
 <h1>Catalog</h1>
@@ -23,17 +25,22 @@
 <div id="marc-information" class="hidden">
     <table id="marc-values">
         <tr>
-            <thk>Field</thk>
+            <th>Field</th>
             <th>Value</th>
         </tr>
     </table>
+    <button id="update-marc-record">Update MARC Record</button>
 </div>
 <div id="hold-information" class="hidden">
-    <button id="new-hold-record">New Hold Record</button>
+    <button id="new-hold-record">New Holdings Record</button>
     <table id="hold-table" class="hidden">
         <tr>
-            <th>Holdings</th>
+            <th>Holdings ID</th>
+            <th>Call Number</th>
             <th>Location</th>
+            <th>Items Held</th>
+            <th>Publication Pattern</th>
+            <th>Notes</th>
         </tr>
     </table>
 </div>
@@ -48,3 +55,77 @@
     </table>
 </div>
 
+<div id="update-marc-record-form" class="hidden">
+    <h1>MARC Records</h1>
+    <table>
+        <tr>
+            <th>Field</th>
+            <th>Value</th>
+        </tr>
+        <tr>
+            <td><input type="text" class="field-part-one" /><input type="text" class="field-part-two" /><input type="text" class="field-part-three" /></td>
+            <td><input type="text" class="field-value" /></td>
+        </tr>
+        <tr>
+            <td><input type="text" class="field-part-one" /><input type="text" class="field-part-two" /><input type="text" class="field-part-three" /></td>
+            <td><input type="text" class="field-value" /></td>
+        </tr>
+        <tr>
+            <td><input type="text" class="field-part-one" /><input type="text" class="field-part-two" /><input type="text" class="field-part-three" /></td>
+            <td><input type="text" class="field-value" /></td>
+        </tr>
+        <tr>
+            <td><input type="text" class="field-part-one" /><input type="text" class="field-part-two" /><input type="text" class="field-part-three" /></td>
+            <td><input type="text" class="field-value" /></td>
+        </tr>
+        <tr>
+            <td><input type="text" class="field-part-one" /><input type="text" class="field-part-two" /><input type="text" class="field-part-three" /></td>
+            <td><input type="text" class="field-value" /></td>
+        </tr>
+        <tr>
+            <td><input type="text" class="field-part-one" /><input type="text" class="field-part-two" /><input type="text" class="field-part-three" /></td>
+            <td><input type="text" class="field-value" /></td>
+        </tr>
+        <tr>
+            <td><input type="text" class="field-part-one" /><input type="text" class="field-part-two" /><input type="text" class="field-part-three" /></td>
+            <td><input type="text" class="field-value" /></td>
+        </tr>
+        <tr>
+            <td><input type="text" class="field-part-one" /><input type="text" class="field-part-two" /><input type="text" class="field-part-three" /></td>
+            <td><input type="text" class="field-value" /></td>
+        </tr>
+        <tr>
+            <td><input type="text" class="field-part-one" /><input type="text" class="field-part-two" /><input type="text" class="field-part-three" /></td>
+            <td><input type="text" class="field-value" /></td>
+        </tr>
+    </table>
+    <button id="add-marc-field-row">Add Field</button>
+    <button id="save-marc-record">Save MARC Record</button>
+     
+</div>
+
+<div id="create-new-holdings-record-form" class="hidden">
+    <h1>Holdings Creation</h1>
+    <label>Location</label>
+    <input type="text" class="holdings-location" /> 
+    <label>Call Number</label>
+    <input type="text" class="holdings-call-number" />
+    <label>Items Held</label>
+    <input type="text" class="holdings-items-held" />
+    <label>Publication Pattern</label>
+    <input type="text" class="holdings-publication-pattern" />
+    <label>Notes</label>
+    <button id="create-new-holding-record">Create Holding</button>
+</div>
+
+<div id="create-new-item-record-form" class="hidden">
+    <h1>Item Creation</h1>
+    <label>Barcode</label>
+    <input type="text" class="item-barcode" />
+    <label>Call Number</label>
+    <input type="text" class="item-call-number" />
+    <label>Location</label>
+    <input type="text" class="item-location" />
+    <label>Notes</label>
+    <button id="create-new-item-record">Create Item</button>
+</div>

@@ -108,6 +108,31 @@ $('#new-marc-bib-record').on('click', function (event) {
     $('#hold-information').removeClass('hidden');
     $('#item-information').removeClass('hidden');
 });
+$('#update-marc-record').on('click', function (event) {
+    $('#update-marc-record-form').removeClass('hidden');
+    //TODO: update inputs based on html
+});
+$('#save-marc-record').on('click', function (event) {
+    $('#update-marc-record-form').addClass('hidden');
+    //TODO: insert values into html or transfer to locked inputs
+});
+$('#new-hold-record').on('click', function (event) {
+    $('#create-new-holdings-record-form').removeClass('hidden');
+    //TODO: wipe the inputs for the next record
+});
+
+$('#create-new-holding-record').on('click', function (event) {
+    $('#create-new-holdings-record-form').addClass('hidden');
+    //TODO: wipe the inputs for the next record and add to row
+});
+$('#new-item-record').on('click', function (event) {
+    $('#create-new-item-record-form').removeClass('hidden');
+    //TODO: wipe the inputs for the next record and add to row
+});
+$('#create-new-item-record').on('click', function (event) {
+    $('#create-new-item-record-form').addClass('hidden');
+    //TODO: wipe the inputs for the next record and add to row
+});
 window.onload = function () {
     initialCalendarLoad();
 };

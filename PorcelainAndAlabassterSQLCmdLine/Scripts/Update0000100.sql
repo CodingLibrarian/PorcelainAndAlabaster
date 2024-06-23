@@ -9,6 +9,7 @@
 		created DATE,
 		lastUpdate DATE,
 		isDeleted BIT,
+		holdings VARCHAR(MAX),
 		items VARCHAR(MAX),
 		marcRecord VARCHAR(MAX)
 	)
@@ -19,8 +20,16 @@
 		itemType VARCHAR(MAX),
 		circulationStatsIds VARCHAR(MAX),
 		patronId INT,
-		bibRecordId INT,
+		bibID INT FOREIGN KEY REFERENCES BibRecords(id),
 		holdId INT
+	)
+	CREATE TABLE HoldingsRecords(
+		id INT PRIMARY KEY,
+		holdingLocation VARCHAR(MAX),
+		callNumber VARCHAR(MAX),
+		items VARCHAR(MAX),
+		publicationPattern VARCHAR(MAX),
+		bibRecordID INT FOREIGN KEY REFERENCES BibRecords(id),
 	)
 	CREATE TABLE Patrons(
 		id INT PRIMARY KEY,

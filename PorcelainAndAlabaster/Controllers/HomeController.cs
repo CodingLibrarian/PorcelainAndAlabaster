@@ -28,6 +28,7 @@ namespace PorcelainAndAlabaster.Controllers
         }
         public IActionResult About()
         {
+            ViewBag.AboutLibrary = GetAbout();
             return View();
         }
         public IActionResult Archives()
@@ -101,6 +102,31 @@ namespace PorcelainAndAlabaster.Controllers
                 connection.Close();
             }
             return libraryEventList;
+        }
+        public AboutLibrary GetAbout()
+        {
+            var aboutLibrary = new AboutLibrary();
+            using (SqlConnection connection = new SqlConnection(DatabaseSettings.ConnectionString))
+            {
+                connection.Open();
+
+                using (SqlCommand command = new SqlCommand("GetAboutLibrary", connection))
+                {
+                    command.CommandType = CommandType.StoredProcedure;
+
+                    using (SqlDataReader reader = command.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            aboutLibrary.AboutTheLibrary = reader.GetString(reader.GetOrdinal("aboutTheLibrary"));
+                            aboutLibrary.MissionStatement = reader.GetString(reader.GetOrdinal("missionStatement"));
+                            aboutLibrary.VisionStatement = reader.GetString(reader.GetOrdinal("visionStatement"));
+                        }
+                    }
+                }
+                connection.Close();
+            }
+            return aboutLibrary;
         }
         public IActionResult Events()
         {

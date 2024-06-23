@@ -37,6 +37,12 @@
 		publicationPattern VARCHAR(MAX),
 		bibRecordID INT FOREIGN KEY REFERENCES BibRecords(id),
 	)
+	CREATE TABLE AboutLibrary(
+		id INT PRIMARY KEY,
+		aboutTheLibrary VARCHAR(MAX),
+		missionStatement VARCHAR(MAX),
+		visionStatement VARCHAR(MAX)
+	)
 	CREATE TABLE Patrons(
 		id INT PRIMARY KEY,
 		firstName VARCHAR(100) NOT NULL,
@@ -123,5 +129,12 @@
 		title VARCHAR(MAX),
 		eventDescription VARCHAR(MAX),
 		imageURL VARCHAR(MAX)
+	)
+	CREATE TYPE dbo.AboutLibraryType AS TABLE  
+	(  
+		id int,
+		aboutTheLibrary VARCHAR(MAX),
+		missionStatement VARCHAR(MAX),
+		visionStatement VARCHAR(MAX)
 	)
 COMMIT TRANSACTION

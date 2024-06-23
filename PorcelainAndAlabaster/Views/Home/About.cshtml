@@ -1,10 +1,11 @@
 ﻿
 @{
     ViewData["Title"] = "About";
+    AboutLibrary aboutLibrary = ViewBag.AboutLibrary;
 }
 <h1 id="about-us-header">About Us</h1>
-<div id="about-us-text"></div>
+<div id="about-us-text">@aboutLibrary?.AboutTheLibrary</div>
 <h2 id="mission-statement-header">Mission Statement</h2>
-<div id="mission-statement-text"></div>
+<div id="mission-statement-text">@aboutLibrary?.MissionStatement</div>
 <h2 id="vision-statement-header">Vision Statement</h2>
-<div id="vision-statement-text"></div>
+<div id="vision-statement-text">@aboutLibrary?.VisionStatement</div>

@@ -102,6 +102,12 @@ $('#ill-request').on('submit', function (event) {
     var illRequest = { firstName: $('#ill-request-first-name-input').val(), lastName: $('#ill-request-last-name-input').val(), email: $('#ill-request-email-input').val(), libraryCardNumber: $('#ill-request-library-card-input').val(), title: $('#ill-request-title-input').val(), author: $('#ill-request-author-input').val(), journal: $('#ill-request-journal-input').val(), volume: $('#ill-request-volume-input').val(), year: $('#ill-request-year-input').val(), isbn: $('#ill-request-isbn-input').val()  };
     $.post('/home/iLLSubmit', illRequest);
 });
+$('#new-marc-bib-record').on('click', function (event) {
+    $('#bib-information').removeClass('hidden');
+    $('#marc-information').removeClass('hidden');
+    $('#hold-information').removeClass('hidden');
+    $('#item-information').removeClass('hidden');
+});
 window.onload = function () {
     initialCalendarLoad();
 };

@@ -9,5 +9,42 @@
     <input id="catalog-search"/>
     <input id="search" type="button"/>
 </div>
-
+<button id="new-marc-bib-record">New Record</button>
+<div id="bib-information" class="hidden">
+    <label>Title</label><input type="text" id="bib-title"/>
+    <label>Author</label><input type="text" id="bib-author" />
+    <label>Publisher</label><input type="text" id="bib-publisher" />
+    <label>Publisher Location</label><input type ="text" id="bib-location" />
+    <label>Publication Year</label><input type="text" id="bib-year" />
+    <label>Created Date</label><p id="bib-created"></p>
+    <label>Last Updated Date</label><p id="bib-updated"></p>
+    <label>Suppressed</label><input type="checkbox" id="bib-suppressed"/>
+</div>
+<div id="marc-information" class="hidden">
+    <table id="marc-values">
+        <tr>
+            <thk>Field</thk>
+            <th>Value</th>
+        </tr>
+    </table>
+</div>
+<div id="hold-information" class="hidden">
+    <button id="new-hold-record">New Hold Record</button>
+    <table id="hold-table" class="hidden">
+        <tr>
+            <th>Holdings</th>
+            <th>Location</th>
+        </tr>
+    </table>
+</div>
+<div id="item-information" class="hidden">
+    <button id="new-item-record">New Item Record</button>
+    <table id="item-table" class="hidden">
+        <tr>
+            <th>Barcode</th>
+            <th>Call Number</th>
+            <th>Location</th>
+        </tr>
+    </table>
+</div>
 

@@ -1,6 +1,4 @@
-﻿USE [master]
-GO
-/****** Object:  StoredProcedure [dbo].[GetBibRecordByID]    Script Date: 6/2/2024 2:45:18 PM ******/
+﻿
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON

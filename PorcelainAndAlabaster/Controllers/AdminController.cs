@@ -2,6 +2,7 @@
 using PorcelainAndAlabaster.Models;
 using System.Data.SqlClient;
 using System.Data;
+using PorcelainAndAlabaster.Settings;
 
 namespace PorcelainAndAlabaster.Controllers
 {
@@ -31,6 +32,8 @@ namespace PorcelainAndAlabaster.Controllers
         }
         public IActionResult EventsEditor()
         {
+            List<LibraryEvent> libraryEvents = GetLibraryEvents();
+            ViewBag.LibraryEvents = libraryEvents;
             return View();
         }
         public IActionResult ILLReview()
@@ -64,7 +67,7 @@ namespace PorcelainAndAlabaster.Controllers
 
         public void InsertPatrons(Patron[] patrons)
             {
-                using (SqlConnection connection = new SqlConnection("YourConnectionString"))
+                using (SqlConnection connection = new SqlConnection(DatabaseSettings.ConnectionString))
                 {
                     connection.Open();
 
@@ -104,7 +107,7 @@ namespace PorcelainAndAlabaster.Controllers
 
         public void InsertUsers(User[] users)
         {
-            using (SqlConnection connection = new SqlConnection("YourConnectionString"))
+            using (SqlConnection connection = new SqlConnection(DatabaseSettings.ConnectionString))
             {
                 connection.Open();
 
@@ -138,7 +141,7 @@ namespace PorcelainAndAlabaster.Controllers
 
         public void InsertBibRecords(BibRecord[] bibRecords)
         {
-            using (SqlConnection connection = new SqlConnection("YourConnectionString"))
+            using (SqlConnection connection = new SqlConnection(DatabaseSettings.ConnectionString))
             {
                 connection.Open();
 
@@ -180,7 +183,7 @@ namespace PorcelainAndAlabaster.Controllers
 
         public void InsertItemRecords(ItemRecord[] itemRecords)
         {
-            using (SqlConnection connection = new SqlConnection("YourConnectionString"))
+            using (SqlConnection connection = new SqlConnection(DatabaseSettings.ConnectionString))
             {
                 connection.Open();
 
@@ -221,7 +224,7 @@ namespace PorcelainAndAlabaster.Controllers
         private List<User> GetUserbyID(int userID)
         {
             var userList = new List<User>();
-            using (SqlConnection connection = new SqlConnection("YourConnectionString"))
+            using (SqlConnection connection = new SqlConnection(DatabaseSettings.ConnectionString))
             {
                 connection.Open();
 
@@ -259,7 +262,7 @@ namespace PorcelainAndAlabaster.Controllers
         private List<Patron> GetPatronbyID(int patronID)
         {
             var patronList = new List<Patron>();
-            using (SqlConnection connection = new SqlConnection("YourConnectionString"))
+            using (SqlConnection connection = new SqlConnection(DatabaseSettings.ConnectionString))
             {
                 connection.Open();
 
@@ -294,7 +297,7 @@ namespace PorcelainAndAlabaster.Controllers
         private List<Patron> GetPatronbyName(string patronName)
         {
             var patronList = new List<Patron>();
-            using (SqlConnection connection = new SqlConnection("YourConnectionString"))
+            using (SqlConnection connection = new SqlConnection(DatabaseSettings.ConnectionString))
             {
                 connection.Open();
 
@@ -377,7 +380,7 @@ namespace PorcelainAndAlabaster.Controllers
         private List<BibRecord> GetBibRecordbyID(int bibRecordID)
         {
             var bibList = new List<BibRecord>();
-            using (SqlConnection connection = new SqlConnection("YourConnectionString"))
+            using (SqlConnection connection = new SqlConnection(DatabaseSettings.ConnectionString))
             {
                 connection.Open();
 
@@ -413,7 +416,7 @@ namespace PorcelainAndAlabaster.Controllers
         private List<BibRecord> GetBibRecordbyTitle(string bibRecordTitle)
         {
             var bibList = new List<BibRecord>();
-            using (SqlConnection connection = new SqlConnection("YourConnectionString"))
+            using (SqlConnection connection = new SqlConnection(DatabaseSettings.ConnectionString))
             {
                 connection.Open();
 
@@ -449,7 +452,7 @@ namespace PorcelainAndAlabaster.Controllers
         private List<BibRecord> GetBibRecordbyAuthor(string bibRecordAuthor)
         {
             var bibList = new List<BibRecord>();
-            using (SqlConnection connection = new SqlConnection("YourConnectionString"))
+            using (SqlConnection connection = new SqlConnection(DatabaseSettings.ConnectionString))
             {
                 connection.Open();
 
@@ -485,7 +488,7 @@ namespace PorcelainAndAlabaster.Controllers
         private List<BibRecord> GetBibRecordbyPublisher(string bibRecordPublisher)
         {
             var bibList = new List<BibRecord>();
-            using (SqlConnection connection = new SqlConnection("YourConnectionString"))
+            using (SqlConnection connection = new SqlConnection(DatabaseSettings.ConnectionString))
             {
                 connection.Open();
 
@@ -534,7 +537,7 @@ namespace PorcelainAndAlabaster.Controllers
         }
         public void UpdateEvents(LibraryEvent[] libraryEvents)
         {
-            using (SqlConnection connection = new SqlConnection("YourConnectionString"))
+            using (SqlConnection connection = new SqlConnection(DatabaseSettings.ConnectionString))
             {
                 connection.Open();
 
@@ -550,6 +553,33 @@ namespace PorcelainAndAlabaster.Controllers
                 }
                 connection.Close();
             }
+        }
+        public List<LibraryEvent>GetLibraryEvents()
+        {
+            var libraryEventList = new List<LibraryEvent>();
+            using (SqlConnection connection = new SqlConnection(DatabaseSettings.ConnectionString))
+            {
+                connection.Open();
+
+                using (SqlCommand command = new SqlCommand("GetLibraryEvents", connection))
+                {
+                    command.CommandType = CommandType.StoredProcedure;
+
+                    using (SqlDataReader reader = command.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            var obj = new LibraryEvent();
+                            obj.EventName = reader.GetString(reader.GetOrdinal("title"));
+                            obj.EventDescription = reader.GetString(reader.GetOrdinal("eventDescription"));
+                            obj.ImageURL = reader.GetString(reader.GetOrdinal("imageURL"));
+                            libraryEventList.Add(obj);
+                        }
+                    }
+                }
+                connection.Close();
+            }
+            return libraryEventList;
         }
     }
 }

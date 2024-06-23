@@ -1,5 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using PorcelainAndAlabaster.Models;
+using PorcelainAndAlabaster.Settings;
+using System.Data.SqlClient;
+using System.Data;
 using System.Diagnostics;
 using System.Net.Mail;
 
@@ -71,8 +74,37 @@ namespace PorcelainAndAlabaster.Controllers
             smtpClient.Send(message);
 
         }
+
+        public List<LibraryEvent> GetLibraryEvents()
+        {
+            var libraryEventList = new List<LibraryEvent>();
+            using (SqlConnection connection = new SqlConnection(DatabaseSettings.ConnectionString))
+            {
+                connection.Open();
+
+                using (SqlCommand command = new SqlCommand("GetLibraryEvents", connection))
+                {
+                    command.CommandType = CommandType.StoredProcedure;
+
+                    using (SqlDataReader reader = command.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            var obj = new LibraryEvent();
+                            obj.EventName = reader.GetString(reader.GetOrdinal("title"));
+                            obj.EventDescription = reader.GetString(reader.GetOrdinal("eventDescription"));
+                            obj.ImageURL = reader.GetString(reader.GetOrdinal("imageURL"));
+                            libraryEventList.Add(obj);
+                        }
+                    }
+                }
+                connection.Close();
+            }
+            return libraryEventList;
+        }
         public IActionResult Events()
         {
+            ViewBag.LibraryEvents = GetLibraryEvents();
             return View();
         }
         public IActionResult ILLRequest()

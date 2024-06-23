@@ -32,8 +32,7 @@ namespace PorcelainAndAlabaster.Controllers
         }
         public IActionResult EventsEditor()
         {
-            List<LibraryEvent> libraryEvents = GetLibraryEvents();
-            ViewBag.LibraryEvents = libraryEvents;
+            ViewBag.LibraryEvents = GetLibraryEvents();
             return View();
         }
         public IActionResult ILLReview()
@@ -554,7 +553,7 @@ namespace PorcelainAndAlabaster.Controllers
                 connection.Close();
             }
         }
-        public List<LibraryEvent>GetLibraryEvents()
+        public List<LibraryEvent> GetLibraryEvents()
         {
             var libraryEventList = new List<LibraryEvent>();
             using (SqlConnection connection = new SqlConnection(DatabaseSettings.ConnectionString))

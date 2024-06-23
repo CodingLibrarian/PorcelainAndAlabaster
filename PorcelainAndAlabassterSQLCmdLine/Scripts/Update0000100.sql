@@ -23,6 +23,12 @@
 		bibID INT FOREIGN KEY REFERENCES BibRecords(id),
 		holdId INT
 	)
+	CREATE TABLE LibraryEvents(
+		id INT PRIMARY KEY,
+		title VARCHAR(MAX),
+		eventDescription VARCHAR(MAX),
+		imageURL VARCHAR(MAX)
+	)
 	CREATE TABLE HoldingsRecords(
 		id INT PRIMARY KEY,
 		holdingLocation VARCHAR(MAX),
@@ -110,5 +116,12 @@
 		patronId varchar(max),
 		bibrecordId int,
 		holdId int
+	)
+	CREATE TYPE dbo.LibraryEventType AS TABLE  
+	(  
+		id int,
+		title VARCHAR(MAX),
+		eventDescription VARCHAR(MAX),
+		imageURL VARCHAR(MAX)
 	)
 COMMIT TRANSACTION

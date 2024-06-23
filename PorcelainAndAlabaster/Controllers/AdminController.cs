@@ -517,5 +517,39 @@ namespace PorcelainAndAlabaster.Controllers
             }
             return bibList;
         }
+
+        private DataTable CreateLibraryEventsDataTable(LibraryEvent[] libraryEvents)
+        {
+            DataTable table = new DataTable();
+            table.Columns.Add("title", typeof(string));
+            table.Columns.Add("eventDescription", typeof(string));
+            table.Columns.Add("imageURL", typeof(string));
+
+            foreach (LibraryEvent libraryEvent in libraryEvents)
+            {
+                table.Rows.Add(libraryEvent.EventName, libraryEvent.EventDescription, libraryEvent.ImageURL);
+            }
+
+            return table;
+        }
+        public void UpdateEvents(LibraryEvent[] libraryEvents)
+        {
+            using (SqlConnection connection = new SqlConnection("YourConnectionString"))
+            {
+                connection.Open();
+
+                using (SqlCommand command = new SqlCommand("InsertLibraryEvents", connection))
+                {
+                    command.CommandType = CommandType.StoredProcedure;
+
+                    SqlParameter parameter = command.Parameters.AddWithValue("@libraryEvents", CreateLibraryEventsDataTable(libraryEvents));
+                    parameter.SqlDbType = SqlDbType.Structured;
+                    parameter.TypeName = "dbo.LibraryEventType";
+
+                    command.ExecuteNonQuery();
+                }
+                connection.Close();
+            }
+        }
     }
 }

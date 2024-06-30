@@ -125,7 +125,12 @@ $('#search-catalog').on('click', function (event) {
         var tableElement = document.getElementById('catalog-search-results-table');
         if (searchResults != null) {
             //Remove the exisitng rows from the table
-            $('.catalog-rows').remove();
+            let existingRows = Array.from($('.catalog-rows'));
+            if (existingRows != null && existingRows.length > 0) {
+                existingRows.forEach(function (el) {
+                    $(el).remove();
+                });
+            }
             searchResults.forEach((resultRow) => {
                 var tableRow = tableElement.insertRow();
                 var imageCell = tableRow.insertCell(0);
@@ -137,6 +142,14 @@ $('#search-catalog').on('click', function (event) {
                 publisherCell.innerHTML = resultRow.publisher;
             });
             $('#catalog-search-results-table').removeClass('hidden');
+            let newRows = Array.from(document.getElementsByTagName('tr'));
+            if (newRows != null && newRows.length > 0) {
+                newRows.forEach(function (el, i) {
+                    if (i != 0) { 
+                        $(el).addClass('catalog-rows');
+                    }
+                });
+            }
         }
         else {
             $('#search-error').removeClass('hidden');

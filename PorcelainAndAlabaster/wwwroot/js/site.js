@@ -1,3 +1,4 @@
+
 function moveCarouselOne(moveForward) {
     var currentDot = $('.carousel-dots > li.active');
     var currentItem = $('.carousel-item-view > div.active');
@@ -87,6 +88,19 @@ function moveCalendarOneMonth(direction) {
 // Events page
 $('.left-carousel-arrow > div').on('click', function (event) { moveCarouselOne(false); });
 $('.right-carousel-arrow > div').on('click', function (event) { moveCarouselOne(true); });
+class EventItem {
+    constructor(eventTitle, eventDescription, imageURL) {
+        this.eventTitle = eventTitle;
+        this.eventDescription = eventDescription;
+        this.imageURL = imageURL;
+    }
+}
+$('#update-events-buttons').on('click', function (event) {
+    let eventList = [];
+    $('div.carousel-item-view > div.item').each()
+    
+    $.post('/home/contactSubmit', contact);
+});
 // Months page
 $('.left-month-arrow > div').on('click', function (event) { moveCalendarOneMonth('previous'); });
 $('.right-month-arrow > div').on('click', function (event) { moveCalendarOneMonth('next'); });
@@ -102,6 +116,12 @@ $('#ill-request').on('submit', function (event) {
     var illRequest = { firstName: $('#ill-request-first-name-input').val(), lastName: $('#ill-request-last-name-input').val(), email: $('#ill-request-email-input').val(), libraryCardNumber: $('#ill-request-library-card-input').val(), title: $('#ill-request-title-input').val(), author: $('#ill-request-author-input').val(), journal: $('#ill-request-journal-input').val(), volume: $('#ill-request-volume-input').val(), year: $('#ill-request-year-input').val(), isbn: $('#ill-request-isbn-input').val()  };
     $.post('/home/iLLSubmit', illRequest);
 });
+$('#search-catalog').on('click', function (event) {
+    event.preventDefault();
+    var catalogSearchQuery = { searchString: $('#catalog-searchbar').val(), location: $('#catalog-search-option').val(), filters: '' };
+    $.post('/home/catalogSearch', catalogSearchQuery);
+});
+// Cataloger
 $('#new-marc-bib-record').on('click', function (event) {
     $('#bib-information').removeClass('hidden');
     $('#marc-information').removeClass('hidden');

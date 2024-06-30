@@ -1,0 +1,21 @@
+﻿
+@{
+    ViewData["Title"] = "Catalog";
+}
+
+<h1>Catalog</h1>
+<select id="catalog-search-option">
+    <option class="title">Title</option>
+    <option class="author">Author</option>
+    <option class="publisher">Publisher</option>
+</select>
+<input id="catalog-searchbar" type="text" />
+<button id="search-catalog">Search</button>
+<table id="catalog-search-results-table" class="hidden">
+    <tr id="catalog-headers">
+        <th></th>
+        <th>Title</th>
+        <th>Author</th>
+        <th>Type</th>
+    </tr>
+</table>

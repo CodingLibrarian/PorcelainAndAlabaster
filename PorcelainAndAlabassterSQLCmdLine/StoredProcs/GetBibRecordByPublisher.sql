@@ -7,7 +7,7 @@ GO
 -- Create date: 06/02/24
 -- Description:	Get BibRecord by Publisher
 -- =============================================
-CREATE OR ALTER PROCEDURE [dbo].[GetBibRecordByPublisher] (@bibPublisher varchar(max))
+CREATE OR ALTER PROCEDURE [dbo].[GetBibRecordByPublisher] (@searchString varchar(max))
 AS  
 BEGIN  
     SELECT
@@ -22,5 +22,5 @@ BEGIN
 		B.items,
 		B.marcRecord
 	FROM BibRecords as B
-	WHERE B.publisher LIKE '%'+ @bibPublisher + '%'
+	WHERE B.publisher LIKE '%'+ @searchString + '%'
 END

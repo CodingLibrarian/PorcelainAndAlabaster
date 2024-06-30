@@ -119,7 +119,29 @@ $('#ill-request').on('submit', function (event) {
 $('#search-catalog').on('click', function (event) {
     event.preventDefault();
     var catalogSearchQuery = { searchString: $('#catalog-searchbar').val(), location: $('#catalog-search-option').val(), filters: '' };
-    $.post('/home/catalogSearch', catalogSearchQuery);
+    $.post('/home/catalogSearch', catalogSearchQuery, function (result) {
+        var searchResults = JSON.parse(result);
+        $('#catalog-search-results-table').addClass('hidden');
+        var tableElement = document.getElementById('catalog-search-results-table');
+        if (searchResults != null) {
+            //Remove the exisitng rows from the table
+            $('.catalog-rows').remove();
+            searchResults.forEach((resultRow) => {
+                var tableRow = tableElement.insertRow();
+                var imageCell = tableRow.insertCell(0);
+                var titleCell = tableRow.insertCell(1);
+                var authorCell = tableRow.insertCell(2);
+                var publisherCell = tableRow.insertCell(3);
+                titleCell.innerHTML = resultRow.title;
+                authorCell.innerHTML = resultRow.author;
+                publisherCell.innerHTML = resultRow.publisher;
+            });
+            $('#catalog-search-results-table').removeClass('hidden');
+        }
+        else {
+            $('#search-error').removeClass('hidden');
+        }
+    });    
 });
 // Cataloger
 $('#new-marc-bib-record').on('click', function (event) {

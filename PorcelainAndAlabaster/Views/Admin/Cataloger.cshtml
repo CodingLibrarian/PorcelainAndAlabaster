@@ -8,8 +8,13 @@
 <h1>Catalog</h1>
 <div id="search-bar">
     <p>Search</p>
-    <input id="catalog-search"/>
-    <input id="search" type="button"/>
+    <select id="catalog-search-option">
+        <option class="title">Title</option>
+        <option class="author">Author</option>
+        <option class="publisher">Publisher</option>
+    </select>
+    <input id="catalog-searchbar" type="text" />
+    <input id="search-catalog" type="button" />
 </div>
 <button id="new-marc-bib-record">New Record</button>
 <div id="bib-information" class="hidden">
@@ -128,4 +133,14 @@
     <input type="text" class="item-location" />
     <label>Notes</label>
     <button id="create-new-item-record">Create Item</button>
+</div>
+
+<div id="search-results-popup" class="hidden">
+    <table id="catalog-search-results-table">
+        <tr id="catalog-headers">
+            <th>Title</th>
+            <th>Author</th>
+            <th>Publisher</th>
+        </tr>
+    </table>
 </div>

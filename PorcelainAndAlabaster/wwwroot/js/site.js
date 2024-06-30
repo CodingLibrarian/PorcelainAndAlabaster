@@ -116,8 +116,9 @@ $('#ill-request').on('submit', function (event) {
     var illRequest = { firstName: $('#ill-request-first-name-input').val(), lastName: $('#ill-request-last-name-input').val(), email: $('#ill-request-email-input').val(), libraryCardNumber: $('#ill-request-library-card-input').val(), title: $('#ill-request-title-input').val(), author: $('#ill-request-author-input').val(), journal: $('#ill-request-journal-input').val(), volume: $('#ill-request-volume-input').val(), year: $('#ill-request-year-input').val(), isbn: $('#ill-request-isbn-input').val()  };
     $.post('/home/iLLSubmit', illRequest);
 });
-$('#search-catalog').on('click', function (event) {
-    event.preventDefault();
+
+// Catalog Serach
+function searchCatalog() {
     var catalogSearchQuery = { searchString: $('#catalog-searchbar').val(), location: $('#catalog-search-option').val(), filters: '' };
     $.post('/home/catalogSearch', catalogSearchQuery, function (result) {
         var searchResults = JSON.parse(result);
@@ -145,7 +146,7 @@ $('#search-catalog').on('click', function (event) {
             let newRows = Array.from(document.getElementsByTagName('tr'));
             if (newRows != null && newRows.length > 0) {
                 newRows.forEach(function (el, i) {
-                    if (i != 0) { 
+                    if (i != 0) {
                         $(el).addClass('catalog-rows');
                     }
                 });
@@ -154,8 +155,26 @@ $('#search-catalog').on('click', function (event) {
         else {
             $('#search-error').removeClass('hidden');
         }
-    });    
+    });
+}
+function showCatalogSelectionPopUp() {
+    if ($('#search-results-popup') != null && $('#search-results-popup').length > 0) {
+        $('#search-results-popup').removeClass('hidden');
+    }
+}
+$('#search-catalog').on('click', function (event) {
+    event.preventDefault();
+    searchCatalog();
+    showCatalogSelectionPopUp();
 });
+$('#catalog-searchbar').on('keyup', function (event) {
+    if (event.which == 13) {
+        event.preventDefault();
+        searchCatalog();
+        showCatalogSelectionPopUp();
+    }
+});
+
 // Cataloger
 $('#new-marc-bib-record').on('click', function (event) {
     $('#bib-information').removeClass('hidden');
@@ -188,6 +207,7 @@ $('#create-new-item-record').on('click', function (event) {
     $('#create-new-item-record-form').addClass('hidden');
     //TODO: wipe the inputs for the next record and add to row
 });
+
 window.onload = function () {
     initialCalendarLoad();
 };
